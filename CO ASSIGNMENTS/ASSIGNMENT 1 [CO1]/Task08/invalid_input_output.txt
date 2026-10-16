@@ -1,0 +1,11 @@
+Compiler: g++ (tdm64-1) 4.9.2
+Standard: C++11
+Flags: -Wall -Wextra -Wconversion -pedantic
+Input:
+abc
+8
+-5
+Output:
+Hour (0-23): Invalid number. Try again.
+Hour (0-23): Recharge in rupees: Negative recharge rejected.
+Exit code: 1
