@@ -1,0 +1,8 @@
+Compiler: g++ (tdm64-1) 4.9.2
+Standard: C++11
+Flags: -Wall -Wextra -Wconversion -pedantic
+Output:
+Fare Rs 10.00  balance Rs 90
+Fare Rs 36.00  balance Rs 54
+Denied (low balance)  balance Rs 54
+Exit code: 0
