@@ -1,0 +1,1 @@
+Recommend integer paise in long long, enum class zones, centralized fare policy, validated input, and SmartCard with private balance. Add your own Task09/10 results and compiler warnings as evidence. Discuss persistence, security, concurrency, and loading fares from a validated configuration file.
