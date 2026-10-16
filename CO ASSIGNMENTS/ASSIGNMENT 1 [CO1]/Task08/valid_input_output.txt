@@ -1,0 +1,9 @@
+Compiler: g++ (tdm64-1) 4.9.2
+Standard: C++11
+Flags: -Wall -Wextra -Wconversion -pedantic
+Input:
+8
+250
+Output:
+Hour (0-23): Recharge in rupees: Accepted recharge paise = 25000
+Exit code: 0
