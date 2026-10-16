@@ -1,0 +1,1 @@
+Explain the objects, each object's state and behaviour, OOP principles, invariants and procedural alternative. See Task 1 in REPORT_DRAFT.md. Add a UML diagram showing SmartCard, Passenger, Journey and FareTable.
