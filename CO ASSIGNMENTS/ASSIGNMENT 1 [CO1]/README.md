@@ -2,9 +2,9 @@
 
 This folder contains a task-by-task study draft based on the assignment PDF.
 
-**Repository location:** `CO ASSIGNMENTS/ASSIGNMENT 1 [CO1]` in the subject repository you provided.
+**Repository location:** `CO ASSIGNMENTS/ASSIGNMENT 1 [CO1]` in [`DSA0101-192524005`](https://github.com/Hitesh-92007/DSA0101-192524005/tree/main/CO%20ASSIGNMENTS/ASSIGNMENT%201%20%5BCO1%5D), the repository you selected.
 
-**Repository requirement to check:** the PDF names a separate repository `DSA01-<RegisterNumber>-Assignment1`. You asked to use the existing subject repository, so this draft is placed here. Confirm with your instructor that this location is acceptable for submission.
+**Repository requirement to check:** the PDF specifies a repository named `DSA01-<RegisterNumber>-Assignment1`. The repository you selected is named `DSA0101-192524005`; confirm with your instructor that this target meets the naming requirement.
 
 ## Build and run status
 
@@ -19,7 +19,7 @@ This folder contains a task-by-task study draft based on the assignment PDF.
 - Record and date your own predictions in Task04 and Task05 `MY_PREDICTION.txt` before running either program; then add the actual output and explanation.
 - Add genuine screenshots from your run and any other evidence requested by the PDF. The saved `.txt` transcripts help verify output but do not replace required screenshots.
 - Finish the report placeholders with your personal details, any required measurements, the final GitHub link and evidence.
-- The PDF names a separate repository `DSA01-<RegisterNumber>-Assignment1`. You selected the existing subject repository, so confirm with the instructor that this folder location is accepted.
+- The PDF specifies a repository named `DSA01-<RegisterNumber>-Assignment1`. You selected `DSA0101-192524005`; confirm with the instructor that this target meets the naming requirement.
 - The PDF requires at least one Git commit per task. The files here are organized as Task01–Task12.
 
 ## Build example
@@ -31,4 +31,5 @@ g++ -std=c++11 -Wall -Wextra -Wconversion -pedantic program.cpp -o program
 ```
 
 On Windows PowerShell, run the resulting executable with `.\program.exe`.
+
 
