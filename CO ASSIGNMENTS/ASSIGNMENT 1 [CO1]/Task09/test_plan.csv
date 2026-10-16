@@ -1,0 +1,14 @@
+Case,Expected
+Inner off-peak,1000 paise
+Middle off-peak,2000 paise
+Outer off-peak,3000 paise
+Inner at 08:00,1200 paise
+Inner at 10:00,1000 paise
+Middle at 17:00,2400 paise
+Outer at 17:00,3600 paise
+Outer at 20:00,3000 paise
+Invalid zone,rejected
+Invalid hour,rejected
+Balance 6200 paying 1200,allowed and leaves 5000
+Negative recharge,rejected
+Five trips 1000+2000+3600+3000+1200,10800 paise
