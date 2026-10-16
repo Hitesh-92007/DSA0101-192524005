@@ -1,0 +1,9 @@
+Compiler: g++ (tdm64-1) 4.9.2
+Standard: C++11
+Flags: -Wall -Wextra -Wconversion -pedantic
+Output:
+Airport weekday peak paise = 7200
+Airport weekend during peak paise = 5400
+Covered Airport pass fare paise = 0
+Pass trip accepted = yes; balance paise = 20000
+Exit code: 0
