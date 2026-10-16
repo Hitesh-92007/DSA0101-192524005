@@ -1,0 +1,19 @@
+Compiler: g++ (tdm64-1) 4.9.2
+Standard: C++11
+Flags: -Wall -Wextra -Wconversion -pedantic
+Output:
+PASS Inner off peak expected=1000 actual=1000
+PASS Middle off peak expected=2000 actual=2000
+PASS Outer off peak expected=3000 actual=3000
+PASS 08:00 peak expected=1200 actual=1200
+PASS 10:00 off peak expected=1000 actual=1000
+PASS 17:00 peak expected=3600 actual=3600
+PASS Middle peak expected=2400 actual=2400
+PASS 20:00 off peak expected=3000 actual=3000
+PASS Invalid hour expected=-1 actual=-1
+Invalid zone rejected: yes
+Leaves exactly 5000 paise: allowed
+Negative recharge rejected: yes
+Five-trip total paise = 10800 (Rs 108.00)
+Failures = 0
+Exit code: 0
