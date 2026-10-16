@@ -2,7 +2,7 @@
 
 Student: [Name]
 Register number: [Register number]
-GitHub link: [Assignment folder in the selected subject repository](https://github.com/Hitesh-92007/DSA0101-OOPS-WITH-C-/tree/main/CO%20ASSIGNMENTS/ASSIGNMENT%201%20%5BCO1%5D)
+GitHub link: [Assignment folder in DSA0101-192524005](https://github.com/Hitesh-92007/DSA0101-192524005/tree/main/CO%20ASSIGNMENTS/ASSIGNMENT%201%20%5BCO1%5D)
 Compiler/version: g++ (tdm64-1) 4.9.2, C++11
 
 Add your name and register number. Record and date your own predictions for Tasks 4 and 5 before running those programs. The other available local measurements and run results are recorded below and in the task folders. Add the screenshots required by the PDF and any personal evidence that only you can provide.
@@ -93,4 +93,5 @@ Add Airport at Rs 60, a 10% weekend discount that replaces peak surcharge, and a
 
 ## Conclusion
 
-The recommended design centralizes fare rules, uses typed zones and integer paise, validates input, and protects card balance. Before submission, add your name/register number, write and date personal predictions for Tasks 4 and 5 before running them, add required screenshots and any required UML diagram, and confirm the instructor accepts the selected subject repository.
+The recommended design centralizes fare rules, uses typed zones and integer paise, validates input, and protects card balance. Before submission, add your name/register number, write and date personal predictions for Tasks 4 and 5 before running them, add required screenshots and any required UML diagram, and confirm the instructor accepts `DSA0101-192524005` under the PDF's repository naming requirement.
+
