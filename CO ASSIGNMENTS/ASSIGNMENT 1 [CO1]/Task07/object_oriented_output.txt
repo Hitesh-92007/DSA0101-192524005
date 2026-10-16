@@ -1,0 +1,6 @@
+Compiler: g++ (tdm64-1) 4.9.2
+Standard: C++11
+Flags: -Wall -Wextra -Wconversion -pedantic
+Output:
+Allowed; remaining paise = 6400
+Exit code: 0
