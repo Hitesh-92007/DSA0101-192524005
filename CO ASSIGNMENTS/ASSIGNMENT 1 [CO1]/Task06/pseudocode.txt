@@ -1,0 +1,9 @@
+START
+  Read zone, hour, passenger category, and card balance
+  If an input is invalid, reject the journey
+  Find the zone base fare in integer paise
+  If hour is in 08:00-09:59 or 17:00-19:59, add 20% in integer paise
+  Apply the documented passenger concession
+  If balance minus fare is below 5000 paise, deny and leave balance unchanged
+  Otherwise deduct fare and report fare and remaining balance
+END
