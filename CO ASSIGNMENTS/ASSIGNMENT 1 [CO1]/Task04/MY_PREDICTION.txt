@@ -1,0 +1,5 @@
+Before running Task04/conversions.cpp, write your own exact output prediction here and add the date/time. After recording the prediction, run the program and compare it with the actual output.
+
+Prediction:
+
+
