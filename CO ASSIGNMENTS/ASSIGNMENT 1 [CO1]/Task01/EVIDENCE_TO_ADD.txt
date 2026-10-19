@@ -1,1 +1,1 @@
-Add your actual compiler output and genuine screenshot(s) for this task. Do not treat sample/expected output as execution evidence.
+Evidence included: `answer.md` contains the object analysis, invariants, assumptions, procedural comparison, and Mermaid UML sketch requested for Task 1. This is an analysis task, so it has no compiler output. No screenshot is included; check whether your instructor wants a rendered UML image in addition to the written diagram.

@@ -21,15 +21,18 @@ class MonthlyPass {
 public:
     MonthlyPass(Zone a, Zone b) {
         const int i = zoneIndex(a), j = zoneIndex(b);
-        if (i >= 0) zones_[static_cast<std::size_t>(i)] = true;
-        if (j >= 0) zones_[static_cast<std::size_t>(j)] = true;
+        if (i < 0 || j < 0 || i == j) return;
+        zones_[static_cast<std::size_t>(i)] = true;
+        zones_[static_cast<std::size_t>(j)] = true;
+        valid_ = true;
     }
     bool covers(Zone z) const {
         const int i = zoneIndex(z);
-        return i >= 0 && zones_[static_cast<std::size_t>(i)];
+        return valid_ && i >= 0 && zones_[static_cast<std::size_t>(i)];
     }
 private:
     std::array<bool, 4> zones_ = {{false, false, false, false}};
+    bool valid_ = false;
 };
 class SmartCard {
 public:

@@ -11,4 +11,5 @@ Invalid zone,rejected
 Invalid hour,rejected
 Balance 6200 paying 1200,allowed and leaves 5000
 Negative recharge,rejected
+Letters for hour (abc),rejected by parser
 Five trips 1000+2000+3600+3000+1200,10800 paise

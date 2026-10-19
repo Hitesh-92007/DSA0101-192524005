@@ -1,6 +1,7 @@
-Compiler: g++ (tdm64-1) 4.9.2
+Compiler: clang version 23.1.1 (https://github.com/llvm/llvm-project.git 6dfe1677ab8dffbc6ec13d53a1e0215d75147689)
 Standard: C++11
-Flags: -Wall -Wextra -Wconversion -pedantic
+Command: g++ -std=c++11 -Wall -Wextra -Wconversion -pedantic procedural.cpp -o procedural.exe
 Output:
 Allowed; remaining paise = 6400
 Exit code: 0
+

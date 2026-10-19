@@ -1,6 +1,6 @@
-Compiler: g++ (tdm64-1) 4.9.2
+Compiler: clang version 23.1.1 (https://github.com/llvm/llvm-project.git 6dfe1677ab8dffbc6ec13d53a1e0215d75147689)
 Standard: C++11
-Flags: -Wall -Wextra -Wconversion -pedantic
+Command: g++ -std=c++11 -Wall -Wextra -Wconversion -pedantic fare_tests.cpp -o fare_tests.exe
 Output:
 PASS Inner off peak expected=1000 actual=1000
 PASS Middle off peak expected=2000 actual=2000
@@ -14,6 +14,8 @@ PASS Invalid hour expected=-1 actual=-1
 Invalid zone rejected: yes
 Leaves exactly 5000 paise: allowed
 Negative recharge rejected: yes
+Letters for hour rejected: yes
 Five-trip total paise = 10800 (Rs 108.00)
 Failures = 0
 Exit code: 0
+

@@ -1,1 +1,1 @@
-Add your actual compiler output and genuine screenshot(s) for this task. Do not treat sample/expected output as execution evidence.
+Evidence included: `answer.md` contains the fare constants, token examples, enum comparison, naming rules, and complexity discussion requested for Task 2. This is a design/explanation task and has no separate executable. No screenshot is included; the answer file is the written evidence.

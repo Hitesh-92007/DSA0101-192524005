@@ -1,6 +1,7 @@
 #include <array>
 #include <iomanip>
 #include <iostream>
+#include <sstream>
 enum class Zone { Inner, Middle, Outer };
 constexpr long long BASE[] = {1000, 2000, 3000};
 constexpr long long MIN_BALANCE = 5000;
@@ -17,6 +18,12 @@ bool recharge(long long& balance, long long amount) {
     if (amount < 0) return false;
     balance += amount;
     return true;
+}
+bool parseHour(const char* text, int& hour) {
+    std::istringstream input(text);
+    if (!(input >> hour)) return false;
+    input >> std::ws;
+    return input.eof() && hour >= 0 && hour <= 23;
 }
 int main() {
     struct Test { const char* name; Zone zone; int hour; long long expected; };
@@ -46,6 +53,9 @@ int main() {
     long long balance = 10000;
     std::cout << "Negative recharge rejected: "
               << (!recharge(balance, -100) ? "yes" : "no") << '\n';
+    int parsedHour = 0;
+    std::cout << "Letters for hour rejected: "
+              << (!parseHour("abc", parsedHour) ? "yes" : "no") << '\n';
     const std::array<long long, 5> trips{{1000, 2000, 3600, 3000, 1200}};
     long long total = 0;
     for (long long f : trips) total += f;

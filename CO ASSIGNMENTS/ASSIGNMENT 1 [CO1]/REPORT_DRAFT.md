@@ -3,9 +3,9 @@
 Student: [Name]
 Register number: [Register number]
 GitHub link: [Assignment folder in DSA0101-192524005](https://github.com/Hitesh-92007/DSA0101-192524005/tree/main/CO%20ASSIGNMENTS/ASSIGNMENT%201%20%5BCO1%5D)
-Compiler/version: g++ (tdm64-1) 4.9.2, C++11
+Compiler/version: g++ command provided by LLVM-MinGW (Clang 23.1.1), C++11
 
-Add your name and register number. Record and date your own predictions for Tasks 4 and 5 before running those programs. The other available local measurements and run results are recorded below and in the task folders. Add the screenshots required by the PDF and any personal evidence that only you can provide.
+Add your name and register number. Reference predictions for Tasks 4 and 5 were recorded with assistance before the executions; the actual outputs and compiler diagnostics are now saved in their task folders. If your instructor requires independent predictions, replace the reference text with your own before rerunning. Actual console transcripts are included, but screenshots required by the PDF are still missing and must be added from genuine program runs. Detailed answers are in each task's `answer.md`.
 
 ## Assumptions
 
@@ -34,15 +34,13 @@ Use bool for flags; enum class Zone for zones; int for hours and percentages; lo
 
 The first division is integer division (7 / 2 becomes 3) before conversion to double. The explicit cast makes the second division floating point. Character arithmetic promotes char to int; assigning the result back narrows it to char, and streaming ch + 1 prints an integer. Assigning 5 to bool yields true; default output is 1 and boolalpha prints true. In the signed/unsigned comparison, -1 converts to unsigned, so on a usual 32-bit unsigned int system the comparison is false and the program prints s >= u. Brace initialization rejects narrowing; explicit casts document intended conversion.
 
-My prediction before running: [write and date it before execution in Task04/MY_PREDICTION.txt]  
-Actual output and explanation: [paste your run and explain each line]
+Reference pre-run prediction is in `Task04/MY_PREDICTION.txt`. The actual output was `3 3.5`, `C 68`, `1 true`, and `s >= u`; it matches the prediction. The compiler emitted the intended signed/unsigned comparison warning. See `Task04/answer.md` and `Task04/RUN_OUTPUT.txt` for the line-by-line explanation and run record.
 
 ## Task 5 — Operators
 
 Peak check: (hour >= 8 && hour < 10) || (hour >= 17 && hour < 20). Surcharge: fare += fare * percent / 100. Concession: fare = fare * (100 - discountPercent) / 100. Parentheses clarify intent. Post-increment yields the old value; pre-increment yields the updated value. Do not modify a variable repeatedly in one expression. Integer division truncates toward zero; remainder has the sign of the left operand. The peak-range expression is O(1) time and O(1) space; a 24-entry boolean table is also O(1) lookup but uses a small fixed table.
 
-My prediction before running: [write and date it before execution in Task05/MY_PREDICTION.txt]  
-Actual output and operator-by-operator explanation: [complete after execution]
+Reference pre-run prediction is in `Task05/MY_PREDICTION.txt`. The actual output was `11 16`, `9 6 4`, `6 4`, `3 1 -3 -1`, and `18`; it matches the prediction. See `Task05/answer.md` and `Task05/RUN_OUTPUT.txt` for the operator-by-operator explanation and run record.
 
 ## Task 6 — Control flow
 
@@ -58,11 +56,11 @@ Task07 contains both implementations. Both have O(1) affordability/deduction and
 
 ## Task 8 — Input/output
 
-safe_io.cpp checks stream failure, clears the failure state, and discards the bad line before retrying. It validates hour and negative recharge. Integer quotient/remainder prints paise exactly; iomanip can format decimal values. getline plus stoi is O(L) for a line of length L and uses O(L) buffer space; it can reject trailing garbage more deliberately, while formatted extraction is concise for tokens. A valid `8`, `250` input was accepted as 25000 paise. Nonnumeric hour input was rejected and retried; a negative recharge was rejected. Transcripts are in the Task08 folder.
+safe_io.cpp checks stream failure, clears the failure state, and discards the bad line before retrying. It validates hour and negative recharge. Integer quotient/remainder prints paise exactly; iomanip can format decimal values. getline plus stoi is O(L) for a line of length L and uses O(L) buffer space; it can reject trailing garbage more deliberately, while formatted extraction is concise for tokens. A valid `8`, `250` input printed `Accepted recharge = Rs 250.00 (25000 paise)`. Nonnumeric hour input was rejected and retried; a negative recharge was rejected. Transcripts are in the Task08 folder.
 
 ## Task 9 — Implementation/testing
 
-Task09/fare_tests.cpp includes cases for zones, boundaries, invalid zone/hour, exact Rs 50 remaining, negative recharge, and a hand-checkable five-trip total. Add your actual results:
+Task09/fare_tests.cpp includes cases for zones, boundaries, invalid zone/hour, letters entered as the hour, exact Rs 50 remaining, negative recharge, and a hand-checkable five-trip total. The current run reports zero failures; the full expected-versus-actual table is in `Task09/answer.md`.
 
 | Case | Expected | Actual | Pass |
 |---|---|---|---|
@@ -75,7 +73,7 @@ Task09/fare_tests.cpp includes cases for zones, boundaries, invalid zone/hour, e
 | Invalid zone/hour and negative recharge | rejected | rejected | Pass |
 | Five-trip total | 10800 paise | 10800 paise | Pass |
 
-The test program reports 9 named cases passed and `Failures = 0`. Full output is in `Task09/RUN_OUTPUT.txt`.
+The test program reports `Failures = 0`. Full output is in `Task09/RUN_OUTPUT.txt`.
 
 Testing t rows is O(t) time and O(t) table storage. Add one row for each new boundary case.
 
@@ -85,7 +83,7 @@ At Rs 36 maximum peak fare, totals are Rs 720,000, Rs 18,000,000 and Rs 108,000,
 
 ## Task 11 — Recommendation
 
-Use integer paise in long long, enum class zones, a centralized fare policy, validated input and a SmartCard with private balance. This keeps per-journey work O(1) and all journeys O(n). Add a fourth zone in one policy table. Limitations: concession stacking and pass policy need exact business rules; persistence, security and concurrency require additional design. Support this recommendation with your own Task09/10 measurements. A configuration file adds O(z) startup read time/storage for z fares but avoids recompilation for each fare revision; validate file contents and define safe failure behaviour.
+Use integer paise in long long, enum class zones, a centralized fare policy, validated input and a SmartCard with private balance. This keeps per-journey work O(1) and all journeys O(n). Add a fourth zone in one policy table. Limitations: concession stacking and pass policy need exact business rules; persistence, security and concurrency require additional design. The Task09/10 run records support this recommendation; verify them on your own compiler if your instructor requires your personal measurements. A configuration file adds O(z) startup read time/storage for z fares but avoids recompilation for each fare revision; validate file contents and define safe failure behaviour.
 
 ## Task 12 — Day-4 challenge
 
@@ -93,5 +91,4 @@ Add Airport at Rs 60, a 10% weekend discount that replaces peak surcharge, and a
 
 ## Conclusion
 
-The recommended design centralizes fare rules, uses typed zones and integer paise, validates input, and protects card balance. Before submission, add your name/register number, write and date personal predictions for Tasks 4 and 5 before running them, add required screenshots and any required UML diagram, and confirm the instructor accepts `DSA0101-192524005` under the PDF's repository naming requirement.
-
+The recommended design centralizes fare rules, uses typed zones and integer paise, validates input, and protects card balance. Before submission, add your name/register number, replace the reference predictions if independent predictions are required, add the required genuine screenshots, and confirm the instructor accepts `DSA0101-192524005` under the PDF's repository naming requirement.

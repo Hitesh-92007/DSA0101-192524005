@@ -1,9 +1,10 @@
-Compiler: g++ (tdm64-1) 4.9.2
+Compiler: clang version 23.1.1 (https://github.com/llvm/llvm-project.git 6dfe1677ab8dffbc6ec13d53a1e0215d75147689)
 Standard: C++11
-Flags: -Wall -Wextra -Wconversion -pedantic
+Command: g++ -std=c++11 -Wall -Wextra -Wconversion -pedantic scale.cpp -o scale.exe
 Output:
-journeys=20000 paise=24680000 double=246799.99999993978 difference=-6.0215825214982033e-008
-journeys=500000 paise=617000000 double=6169999.9999570353 difference=-4.296470433473587e-005
+journeys=20000 paise=24680000 double=246799.99999993978 difference=-6.0215825214982033e-08
+journeys=500000 paise=617000000 double=6169999.9999570353 difference=-4.296470433473587e-05
 journeys=3000000 paise=3702000000 double=37020000.000630721 difference=0.00063072144985198975
 INT_MAX=2147483647 network paise=10800000000 fits int=no
 Exit code: 0
+

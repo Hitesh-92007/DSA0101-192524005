@@ -1,0 +1,15 @@
+Compiler: clang version 23.1.1 (https://github.com/llvm/llvm-project.git 6dfe1677ab8dffbc6ec13d53a1e0215d75147689)
+Standard: C++11
+Command: g++ -std=c++11 -Wall -Wextra -Wconversion -pedantic conversions.cpp -o conversions.exe
+Compiler diagnostics:
+work\DSA0101-OOPS-WITH-C-\CO ASSIGNMENTS\ASSIGNMENT 1 [CO1]\Task04\conversions.cpp:13:21: warning: comparison of integers of different signs: 'int' and 'unsigned int' [-Wsign-compare]
+   13 |     std::cout << (s < u ? "s < u" : "s >= u") << '\n';
+      |                   ~ ^ ~
+1 warning generated.
+Output:
+3 3.5
+C 68
+1 true
+s >= u
+Exit code: 0
+

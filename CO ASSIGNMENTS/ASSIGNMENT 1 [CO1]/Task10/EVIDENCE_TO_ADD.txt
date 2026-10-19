@@ -1,1 +1,1 @@
-Add your actual compiler output and genuine screenshot(s) for this task. Do not treat sample/expected output as execution evidence.
+Evidence included: `scale.cpp`, `answer.md`, and the actual measured totals in `RUN_OUTPUT.txt`, including the double-versus-paise differences and the 32-bit range check. The transcript is not a screenshot; add a genuine screenshot of this run before submission.

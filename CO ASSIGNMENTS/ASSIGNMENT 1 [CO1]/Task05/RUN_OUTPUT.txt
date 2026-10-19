@@ -1,0 +1,11 @@
+Compiler: clang version 23.1.1 (https://github.com/llvm/llvm-project.git 6dfe1677ab8dffbc6ec13d53a1e0215d75147689)
+Standard: C++11
+Command: g++ -std=c++11 -Wall -Wextra -Wconversion -pedantic operators.cpp -o operators.exe
+Output:
+11 16
+9 6 4
+6 4
+3 1 -3 -1
+18
+Exit code: 0
+

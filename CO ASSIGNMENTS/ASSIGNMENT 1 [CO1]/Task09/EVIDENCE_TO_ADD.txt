@@ -1,1 +1,1 @@
-Add your actual compiler output and genuine screenshot(s) for this task. Do not treat sample/expected output as execution evidence.
+Evidence included: `fare_tests.cpp`, `test_plan.csv`, `answer.md`, and the actual run transcript in `RUN_OUTPUT.txt`; all listed cases pass and the program reports zero failures. The transcript is not a screenshot; add a genuine screenshot of the test run before submission.

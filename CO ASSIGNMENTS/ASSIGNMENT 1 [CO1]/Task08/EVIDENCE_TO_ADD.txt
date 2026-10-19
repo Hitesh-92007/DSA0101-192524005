@@ -1,1 +1,1 @@
-Add your actual compiler output and genuine screenshot(s) for this task. Do not treat sample/expected output as execution evidence.
+Evidence included: `safe_io.cpp`, `answer.md`, and actual valid/invalid input transcripts in `valid_input_output.txt` and `invalid_input_output.txt`. The transcripts show numeric-input recovery and rejection of a negative recharge. The transcripts are not screenshots; add genuine screenshots of both runs before submission.

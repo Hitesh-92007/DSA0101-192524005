@@ -1,1 +1,1 @@
-Add your actual compiler output and genuine screenshot(s) for this task. Do not treat sample/expected output as execution evidence.
+Evidence included: both implementations (`procedural.cpp`, `object_oriented.cpp`) and their actual run transcripts (`procedural_output.txt`, `object_oriented_output.txt`); `answer.md` compares the invariant and complexity. The transcripts are not screenshots; add genuine screenshots of the two runs before submission.

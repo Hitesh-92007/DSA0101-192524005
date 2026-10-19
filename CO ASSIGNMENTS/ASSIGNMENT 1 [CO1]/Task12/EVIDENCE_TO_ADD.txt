@@ -1,1 +1,1 @@
-Add your actual compiler output and genuine screenshot(s) for this task. Do not treat sample/expected output as execution evidence.
+Evidence included: `redesigned_fare.cpp`, `answer.md`, and the actual compiler/run transcript in `RUN_OUTPUT.txt` with Airport weekday peak, weekend peak, and covered-pass examples. The transcript is not a screenshot; add a genuine screenshot of this run before submission.

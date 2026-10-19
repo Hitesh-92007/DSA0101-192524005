@@ -1,1 +1,1 @@
-Add your actual compiler output and genuine screenshot(s) for this task. Do not treat sample/expected output as execution evidence.
+Evidence included: `answer.md` has the fare pseudocode and control-structure justification; `fare_complete.cpp` is the completed program; `RUN_OUTPUT.txt` is its actual compiler/run transcript. Task09 has the exact peak-boundary checks. The transcript is not a screenshot; add a genuine screenshot of the program output before submission.

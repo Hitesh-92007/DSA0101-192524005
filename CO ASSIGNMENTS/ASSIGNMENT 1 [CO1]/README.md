@@ -1,35 +1,29 @@
 # Assignment 1 [CO1] — Metro Smart-Card Fare System
 
-This folder contains a task-by-task study draft based on the assignment PDF.
+This folder contains the task answers, C++ programs, and actual console run records for the assignment. Open `Task01/answer.md` for the object analysis and UML sketch. Each task folder has its own `answer.md` and `EVIDENCE_TO_ADD.txt` describing the available evidence.
 
-**Repository location:** `CO ASSIGNMENTS/ASSIGNMENT 1 [CO1]` in [`DSA0101-192524005`](https://github.com/Hitesh-92007/DSA0101-192524005/tree/main/CO%20ASSIGNMENTS/ASSIGNMENT%201%20%5BCO1%5D), the repository you selected.
+## Task map
 
-**Repository requirement to check:** the PDF specifies a repository named `DSA01-<RegisterNumber>-Assignment1`. The repository you selected is named `DSA0101-192524005`; confirm with your instructor that this target meets the naming requirement.
+| Task | Answer | Code / run evidence |
+|---|---|---|
+| 01 Objects and OOP | `Task01/answer.md` | Analysis and Mermaid UML; no executable required |
+| 02 Tokens and constants | `Task02/answer.md` | Constant/code examples in the answer |
+| 03 Types | `Task03/answer.md` | `Task03/types.cpp`, `Task03/RUN_OUTPUT.txt` |
+| 04 Conversions | `Task04/answer.md` | `Task04/conversions.cpp`, prediction, `Task04/RUN_OUTPUT.txt` |
+| 05 Operators | `Task05/answer.md` | `Task05/operators.cpp`, prediction, `Task05/RUN_OUTPUT.txt` |
+| 06 Control structures | `Task06/answer.md` | Pseudocode, `Task06/fare_complete.cpp`, `Task06/RUN_OUTPUT.txt` |
+| 07 Procedural vs OOP | `Task07/answer.md` | Both `.cpp` files and both output transcripts |
+| 08 Safe I/O | `Task08/answer.md` | `safe_io.cpp`, valid and invalid input transcripts |
+| 09 Testing | `Task09/answer.md` | Test table, `fare_tests.cpp`, `test_plan.csv`, run transcript |
+| 10 Scale and precision | `Task10/answer.md` | `scale.cpp` and measured output transcript |
+| 11 Recommendation | `Task11/answer.md` | Recommendation supported by Tasks09, 10, and 12 |
+| 12 Design challenge | `Task12/answer.md` | `redesigned_fare.cpp` and run transcript |
 
-## Build and run status
+## Build and evidence status
 
-- Compiler found on this laptop: `g++ (tdm64-1) 4.9.2` from Dev-C++.
-- Tested standard: C++11. All ten `.cpp` files compile with the flags below. Task04 prints the expected signed/unsigned comparison warning because that task demonstrates the conversion.
-- Tasks 03, 06, 07, 08, 09, 10 and 12 were run. Their captured console output is saved in the task folders. Tasks 04 and 05 were compiled but deliberately not run because the PDF asks you to write and date your own predictions first.
-- See `BUILD_RESULTS.md` for the compile list and run results.
-
-## Before submitting
-
-- Add your full name and register number to `REPORT_DRAFT.md`.
-- Record and date your own predictions in Task04 and Task05 `MY_PREDICTION.txt` before running either program; then add the actual output and explanation.
-- Add genuine screenshots from your run and any other evidence requested by the PDF. The saved `.txt` transcripts help verify output but do not replace required screenshots.
-- Finish the report placeholders with your personal details, any required measurements, the final GitHub link and evidence.
-- The PDF specifies a repository named `DSA01-<RegisterNumber>-Assignment1`. You selected `DSA0101-192524005`; confirm with the instructor that this target meets the naming requirement.
-- The PDF requires at least one Git commit per task. The files here are organized as Task01–Task12.
-
-## Build example
-
-From the relevant task folder, using the tested Dev-C++ compiler:
-
-```text
-g++ -std=c++11 -Wall -Wextra -Wconversion -pedantic program.cpp -o program
-```
-
-On Windows PowerShell, run the resulting executable with `.\program.exe`.
-
-
+- Compiler used: `g++` command supplied by LLVM-MinGW, reporting Clang 23.1.1; C++11.
+- Compile command: `g++ -std=c++11 -Wall -Wextra -Wconversion -pedantic source.cpp -o program.exe`.
+- Tasks03–10 and 12 were compiled and run; their actual console transcripts are saved in their task folders. Task04 has the expected signed/unsigned comparison warning. See `BUILD_RESULTS.md`.
+- The PDF asks for output screenshots. The repository currently has text transcripts but no genuine screenshot files; add screenshots of the runs before submission. Tasks04/05 predictions are reference predictions prepared with assistance; replace them with your own if your instructor requires independent predictions.
+- Add your name and register number to `REPORT_DRAFT.md`. The scenario does not specify the student/senior concession percentage, so the report marks its 50% example as an assumption to confirm.
+- The PDF specifies a repository named `DSA01-<RegisterNumber>-Assignment1`; the selected repository is `DSA0101-192524005`. Confirm with the instructor that this repository name is acceptable.
