@@ -1,5 +1,8 @@
-Before running Task05/operators.cpp, write your own exact output prediction here and add the date/time. After recording the prediction, run the program and compare it with the actual output.
+Reference prediction prepared before the execution record on 2026-10-19. Review the precedence and side effects. If your instructor requires a prediction written independently, write your own before running the program.
 
-Prediction:
-
-
+Predicted output:
+11 16
+9 6 4
+6 4
+3 1 -3 -1
+18
