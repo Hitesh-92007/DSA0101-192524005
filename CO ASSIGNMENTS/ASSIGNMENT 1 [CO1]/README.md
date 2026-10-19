@@ -1,6 +1,6 @@
 # Assignment 1 [CO1] — Metro Smart-Card Fare System
 
-This folder contains the task answers, C++ programs, and actual console run records for the assignment. Open `Task01/answer.md` for the object analysis and UML sketch. Each task folder has its own `answer.md` and `EVIDENCE_TO_ADD.txt` describing the available evidence.
+This folder contains the task answers, C++ programs, actual console run records, and per-task screenshot evidence. Open `Task01/answer.md` for the object analysis and UML sketch. Each task folder has its own `answer.md`, `EVIDENCE_TO_ADD.txt`, and `evidence/` folder describing or showing its evidence.
 
 ## Task map
 
@@ -24,6 +24,6 @@ This folder contains the task answers, C++ programs, and actual console run reco
 - Compiler used: `g++` command supplied by LLVM-MinGW, reporting Clang 23.1.1; C++11.
 - Compile command: `g++ -std=c++11 -Wall -Wextra -Wconversion -pedantic source.cpp -o program.exe`.
 - Tasks03–10 and 12 were compiled and run; their actual console transcripts are saved in their task folders. Task04 has the expected signed/unsigned comparison warning. See `BUILD_RESULTS.md`.
-- The PDF asks for output screenshots. The repository currently has text transcripts but no genuine screenshot files; add screenshots of the runs before submission. Tasks04/05 predictions are reference predictions prepared with assistance; replace them with your own if your instructor requires independent predictions.
+- Each task's `evidence/` folder now contains screenshots of the relevant source/answer and, for coding tasks, the saved actual run transcript. Output images capture the transcript displayed in Notepad; they are screenshots of the recorded output text, not live terminal windows. The original `.txt` transcripts remain available. Tasks04/05 predictions are reference predictions prepared with assistance; replace them with your own if your instructor requires independent predictions.
 - Add your name and register number to `REPORT_DRAFT.md`. The scenario does not specify the student/senior concession percentage, so the report marks its 50% example as an assumption to confirm.
 - The PDF specifies a repository named `DSA01-<RegisterNumber>-Assignment1`; the selected repository is `DSA0101-192524005`. Confirm with the instructor that this repository name is acceptable.

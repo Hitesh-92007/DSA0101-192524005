@@ -23,4 +23,4 @@ g++ -std=c++11 -Wall -Wextra -Wconversion -pedantic source.cpp -o program.exe
 
 Task04 and Task05 predictions were recorded with assistance before their runs; see the task folders. Task09 includes the requested nonnumeric-hour parser check. Task08 includes both valid input and recovery/rejection transcripts.
 
-These `.txt` files are actual console transcripts from the executions above. They are not screenshots. The assignment's general submission requirements also ask for output screenshots; genuine screenshots still need to be added before final submission. Tasks01 and 02 are written analysis/design tasks rather than separate executable programs.
+These `.txt` files are actual console transcripts from the executions above. Screenshot evidence is now saved in each task's `evidence/` folder: code screenshots show the source, and output screenshots show the saved transcript opened in Notepad. They document the actual recorded output but are not live terminal-window captures. Tasks01, 02, and 11 are written analysis/design tasks rather than separate executable programs and have screenshots of their written answers.

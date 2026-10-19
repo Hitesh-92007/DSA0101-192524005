@@ -5,7 +5,7 @@ Register number: [Register number]
 GitHub link: [Assignment folder in DSA0101-192524005](https://github.com/Hitesh-92007/DSA0101-192524005/tree/main/CO%20ASSIGNMENTS/ASSIGNMENT%201%20%5BCO1%5D)
 Compiler/version: g++ command provided by LLVM-MinGW (Clang 23.1.1), C++11
 
-Add your name and register number. Reference predictions for Tasks 4 and 5 were recorded with assistance before the executions; the actual outputs and compiler diagnostics are now saved in their task folders. If your instructor requires independent predictions, replace the reference text with your own before rerunning. Actual console transcripts are included, but screenshots required by the PDF are still missing and must be added from genuine program runs. Detailed answers are in each task's `answer.md`.
+Add your name and register number. Reference predictions for Tasks 4 and 5 were recorded with assistance before the executions; the actual outputs and compiler diagnostics are now saved in their task folders. If your instructor requires independent predictions, replace the reference text with your own before rerunning. Each task's `evidence/` folder contains screenshots of the answer or source and, for coding tasks, the saved actual run transcript displayed in Notepad. These output images show the recorded output text, not a live terminal window. Detailed answers are in each task's `answer.md`.
 
 ## Assumptions
 
@@ -91,4 +91,4 @@ Add Airport at Rs 60, a 10% weekend discount that replaces peak surcharge, and a
 
 ## Conclusion
 
-The recommended design centralizes fare rules, uses typed zones and integer paise, validates input, and protects card balance. Before submission, add your name/register number, replace the reference predictions if independent predictions are required, add the required genuine screenshots, and confirm the instructor accepts `DSA0101-192524005` under the PDF's repository naming requirement.
+The recommended design centralizes fare rules, uses typed zones and integer paise, validates input, and protects card balance. Before submission, add your name/register number, replace the reference predictions if independent predictions are required, and confirm the instructor accepts `DSA0101-192524005` under the PDF's repository naming requirement.
