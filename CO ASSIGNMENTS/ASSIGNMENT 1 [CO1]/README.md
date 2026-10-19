@@ -1,6 +1,6 @@
 # Assignment 1 [CO1] — Metro Smart-Card Fare System
 
-This folder contains the task answers, C++ programs, actual console run records, and per-task screenshot evidence. Open `Task01/answer.md` for the object analysis and UML sketch. Each task folder has its own `answer.md`, `EVIDENCE_TO_ADD.txt`, and `evidence/` folder describing or showing its evidence.
+This folder contains the task answers, C++ programs, actual console run records, and per-task screenshot evidence. Open `Task01/answer.md` for the object analysis and UML sketch. Each task folder has its `answer.md` and `evidence/` folder.
 
 ## Task map
 
