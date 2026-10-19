@@ -16,11 +16,11 @@ g++ -std=c++11 -Wall -Wextra -Wconversion -pedantic source.cpp -o program.exe
 | 05 | `Task05/operators.cpp` | Success, no diagnostics | `Task05/RUN_OUTPUT.txt`, exit 0 |
 | 06 | `Task06/fare_complete.cpp` | Success, no diagnostics | `Task06/RUN_OUTPUT.txt`, exit 0 |
 | 07 | `Task07/procedural.cpp`, `Task07/object_oriented.cpp` | Both success, no diagnostics | Both output files, exit 0 |
-| 08 | `Task08/safe_io.cpp` | Success, no diagnostics | Valid input exit 0; invalid input rejected with expected exit 1 |
+| 08 | `Task08/safe_io.cpp` | Success, no diagnostics | Valid input produces a journey report; malformed input, zone 4, hour 24, and negative balance are rejected and retried; recovered run exits 0 |
 | 09 | `Task09/fare_tests.cpp` | Success, no diagnostics | `Task09/RUN_OUTPUT.txt`, 0 failures, exit 0 |
 | 10 | `Task10/scale.cpp` | Success, no diagnostics | `Task10/RUN_OUTPUT.txt`, exit 0 |
 | 12 | `Task12/redesigned_fare.cpp` | Success, no diagnostics | `Task12/RUN_OUTPUT.txt`, exit 0 |
 
-Task04 and Task05 predictions were recorded with assistance before their runs; see the task folders. Task09 includes the requested nonnumeric-hour parser check. Task08 includes both valid input and recovery/rejection transcripts.
+Task04 and Task05 prediction files are labelled as reference predictions prepared with assistance before their runs; see the task folders. Task09 includes the requested nonnumeric-hour parser check. Task08 includes valid and recovery transcripts; the recovery case rejects a nonnumeric zone, zone 4, hour 24, and a negative balance before producing a successful report.
 
-These `.txt` files are actual console transcripts from the executions above. Screenshot evidence is now saved in each task's `evidence/` folder: code screenshots show the source, and output screenshots show the saved transcript opened in Notepad. They document the actual recorded output but are not live terminal-window captures. Tasks01, 02, and 11 are written analysis/design tasks rather than separate executable programs and have screenshots of their written answers.
+These `.txt` files are actual console transcripts from the executions above. Screenshot evidence is saved in every task's `evidence/` folder: code screenshots show the source, output screenshots show the saved transcript open in Notepad, and Task01 also includes a browser screenshot of the rendered UML diagram. Output screenshots document the actual recorded output but are not live terminal-window captures. Tasks01, 02, and 11 are written analysis/design tasks rather than separate executable programs and have screenshots of their written answers or diagram.

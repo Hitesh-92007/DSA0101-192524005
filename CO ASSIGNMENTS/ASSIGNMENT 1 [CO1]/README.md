@@ -1,29 +1,77 @@
 # Assignment 1 [CO1] — Metro Smart-Card Fare System
 
-This folder contains the task answers, C++ programs, actual console run records, and per-task screenshot evidence. Open `Task01/answer.md` for the object analysis and UML sketch. Each task folder has its `answer.md` and `evidence/` folder.
+Student: Hitesh  
+Register number: 192524005
 
-## Task map
+This folder contains the written answers, C++ programs, run transcripts, and evidence for Tasks 01–12. Start with `REPORT_DRAFT.md`; each task's detailed response is in its `answer.md` file.
 
-| Task | Answer | Code / run evidence |
+## Task map and short results
+
+| Task | Files | Result |
 |---|---|---|
-| 01 Objects and OOP | `Task01/answer.md` | Analysis and Mermaid UML; no executable required |
-| 02 Tokens and constants | `Task02/answer.md` | Constant/code examples in the answer |
-| 03 Types | `Task03/answer.md` | `Task03/types.cpp`, `Task03/RUN_OUTPUT.txt` |
-| 04 Conversions | `Task04/answer.md` | `Task04/conversions.cpp`, prediction, `Task04/RUN_OUTPUT.txt` |
-| 05 Operators | `Task05/answer.md` | `Task05/operators.cpp`, prediction, `Task05/RUN_OUTPUT.txt` |
-| 06 Control structures | `Task06/answer.md` | Pseudocode, `Task06/fare_complete.cpp`, `Task06/RUN_OUTPUT.txt` |
-| 07 Procedural vs OOP | `Task07/answer.md` | Both `.cpp` files and both output transcripts |
-| 08 Safe I/O | `Task08/answer.md` | `safe_io.cpp`, valid and invalid input transcripts |
-| 09 Testing | `Task09/answer.md` | Test table, `fare_tests.cpp`, `test_plan.csv`, run transcript |
-| 10 Scale and precision | `Task10/answer.md` | `scale.cpp` and measured output transcript |
-| 11 Recommendation | `Task11/answer.md` | Recommendation supported by Tasks09, 10, and 12 |
-| 12 Design challenge | `Task12/answer.md` | `redesigned_fare.cpp` and run transcript |
+| 01 — Objects and OOP | `Task01/answer.md`, `Task01/evidence/uml_class_diagram.svg` | Explains the objects, invariants, OOP principles, and procedural alternative; includes the rendered UML asset and editable Mermaid source. |
+| 02 — Tokens and constants | `Task02/answer.md` | Identifies token kinds and recommends `constexpr` and `enum class` for the fare rules. |
+| 03 — Type choices | `Task03/answer.md`, `types.cpp`, `RUN_OUTPUT.txt` | Measures sizes/ranges including `unsigned` and `auto`; shows why a 32-bit `int` cannot hold the largest network total in paise. |
+| 04 — Conversions | `Task04/answer.md`, `conversions.cpp`, `MY_PREDICTION.txt`, `RUN_OUTPUT.txt` | Output matches the reference prediction; the signed/unsigned warning is intentional and explained. |
+| 05 — Operators | `Task05/answer.md`, `operators.cpp`, `MY_PREDICTION.txt`, `RUN_OUTPUT.txt` | Output matches the reference prediction; precedence, increment, division, and remainder are explained. |
+| 06 — Control structures | `Task06/answer.md`, `pseudocode.txt`, `fare_complete.cpp`, `RUN_OUTPUT.txt` | Runs the sample journeys and verifies that exactly 10:00 and 20:00 are off-peak. |
+| 07 — Procedural vs OOP | `Task07/answer.md`, both `.cpp` files and output transcripts | Both versions approve the trip and leave 6400 paise. |
+| 08 — Safe input/output | `Task08/answer.md`, `safe_io.cpp`, input files and output transcripts | Prints a journey report; valid input is approved, while malformed and out-of-range input is rejected and retried. |
+| 09 — Testing | `Task09/answer.md`, `fare_tests.cpp`, `test_plan.csv`, `RUN_OUTPUT.txt` | The recorded test run reports zero failures. |
+| 10 — Scale and precision | `Task10/answer.md`, `scale.cpp`, `RUN_OUTPUT.txt` | Compares exact integer-paise totals with floating-point accumulation at three trip counts. |
+| 11 — Recommendation | `Task11/answer.md` | Recommends the design using the earlier tests and scale results. |
+| 12 — Design challenge | `Task12/answer.md`, `redesigned_fare.cpp`, `RUN_OUTPUT.txt` | Demonstrates Airport fares, weekend discount, and pass coverage. |
 
-## Build and evidence status
+## Build and run each program
 
-- Compiler used: `g++` command supplied by LLVM-MinGW, reporting Clang 23.1.1; C++11.
-- Compile command: `g++ -std=c++11 -Wall -Wextra -Wconversion -pedantic source.cpp -o program.exe`.
-- Tasks03–10 and 12 were compiled and run; their actual console transcripts are saved in their task folders. Task04 has the expected signed/unsigned comparison warning. See `BUILD_RESULTS.md`.
-- Each task's `evidence/` folder now contains screenshots of the relevant source/answer and, for coding tasks, the saved actual run transcript. Output images capture the transcript displayed in Notepad; they are screenshots of the recorded output text, not live terminal windows. The original `.txt` transcripts remain available. Tasks04/05 predictions are reference predictions prepared with assistance; replace them with your own if your instructor requires independent predictions.
-- Add your name and register number to `REPORT_DRAFT.md`. The scenario does not specify the student/senior concession percentage, so the report marks its 50% example as an assumption to confirm.
-- The PDF specifies a repository named `DSA01-<RegisterNumber>-Assignment1`; the selected repository is `DSA0101-192524005`. Confirm with the instructor that this repository name is acceptable.
+Use an LLVM-MinGW terminal with `g++` available. Run each command from the named task folder. The commands use C++11 and enable common warnings.
+
+```powershell
+# Task03
+g++ -std=c++11 -Wall -Wextra -Wconversion -pedantic types.cpp -o types.exe
+.\types.exe
+
+# Task04 (one signed/unsigned comparison warning is expected)
+g++ -std=c++11 -Wall -Wextra -Wconversion -pedantic conversions.cpp -o conversions.exe
+.\conversions.exe
+
+# Task05
+g++ -std=c++11 -Wall -Wextra -Wconversion -pedantic operators.cpp -o operators.exe
+.\operators.exe
+
+# Task06
+g++ -std=c++11 -Wall -Wextra -Wconversion -pedantic fare_complete.cpp -o fare_complete.exe
+.\fare_complete.exe
+
+# Task07 — compile and run each file separately
+g++ -std=c++11 -Wall -Wextra -Wconversion -pedantic procedural.cpp -o procedural.exe
+.\procedural.exe
+g++ -std=c++11 -Wall -Wextra -Wconversion -pedantic object_oriented.cpp -o object_oriented.exe
+.\object_oriented.exe
+
+# Task08 — replay the recorded valid and recovery inputs
+g++ -std=c++11 -Wall -Wextra -Wconversion -pedantic safe_io.cpp -o safe_io.exe
+Get-Content valid_input.txt | .\safe_io.exe
+Get-Content invalid_input.txt | .\safe_io.exe
+
+# Task09
+g++ -std=c++11 -Wall -Wextra -Wconversion -pedantic fare_tests.cpp -o fare_tests.exe
+.\fare_tests.exe
+
+# Task10
+g++ -std=c++11 -Wall -Wextra -Wconversion -pedantic scale.cpp -o scale.exe
+.\scale.exe
+
+# Task12
+g++ -std=c++11 -Wall -Wextra -Wconversion -pedantic redesigned_fare.cpp -o redesigned_fare.exe
+.\redesigned_fare.exe
+```
+
+Tasks01, 02, and 11 are written analysis/design tasks and do not have standalone programs. Actual run records are in each coding task's `RUN_OUTPUT.txt` or named output transcript. Every task has an `evidence/` folder containing screenshots of its answer/source and, where applicable, its run transcript. Output screenshots show the saved run transcript open in Notepad; they are not screenshots of a live terminal.
+
+## Notes before submission
+
+- Task04 and Task05 prediction files are clearly labelled reference predictions prepared with assistance. If the instructor requires each student to predict independently before running, write your own predictions and then rerun the programs; do not submit the reference prediction as independent work.
+- The assignment does not specify the student/senior concession rate. Any 50% example in the design discussion is explicitly an assumption; confirm the actual rate and stacking order with the instructor.
+- The PDF requests a repository named `DSA01-<RegisterNumber>-Assignment1`. This work is in the subject repository `DSA0101-192524005` because that repository was selected for the assignment. Ask the instructor whether that naming difference is acceptable.
+- The report uses the supplied account name `Hitesh`; replace it with the full name your instructor expects if necessary.

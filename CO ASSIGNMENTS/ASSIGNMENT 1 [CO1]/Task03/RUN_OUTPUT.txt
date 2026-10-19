@@ -1,10 +1,15 @@
-Compiler: clang version 23.1.1 (https://github.com/llvm/llvm-project.git 6dfe1677ab8dffbc6ec13d53a1e0215d75147689)
+Compiler: clang version 23.1.1 (LLVM-MinGW, x86_64 Windows GNU)
 Standard: C++11
-Command: g++ -std=c++11 -Wall -Wextra -Wconversion -pedantic types.cpp -o types.exe
+Command: g++ -std=c++11 -Wall -Wextra -Wconversion -pedantic Task03/types.cpp -o Task03/types.exe
 Output:
-bool 1 char 1 int 4 long long 8 float 4 double 8 bytes
-INT_MIN -2147483648 INT_MAX 2147483647
-Maximum network paise 10800000000
+sizeof bytes: bool=1 char=1 int=4 long long=8 unsigned int=4 float=4 double=8 auto(long long)=8
+char range=-128..127
+int range=-2147483648..2147483647
+unsigned int range=0..4294967295
+long long range=-9223372036854775808..9223372036854775807
+float max=3.40282e+38 (sample Rs 12.34)
+double max=1.79769e+308 (sample Rs 12.34)
+Maximum network paise at Rs 36 per journey = 10800000000
+Network total fits int = no
 Ten additions of 0.1 = 0.99999999999999989
 Exit code: 0
-

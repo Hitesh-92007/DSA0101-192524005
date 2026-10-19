@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title description">
+  <title id="title">Metro smart-card fare system UML class diagram</title>
+  <desc id="description">SmartCard pays for journeys. Journey selects a Zone and requests a fare from FareTable. Passenger category supplies concession eligibility to FareTable.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#334155"/>
+    </marker>
+    <style>
+      .bg { fill: #f8fafc; }
+      .box { fill: #ffffff; stroke: #334155; stroke-width: 2; rx: 12; }
+      .head { fill: #dbeafe; stroke: #334155; stroke-width: 2; rx: 12; }
+      .title { font: 700 22px 'Segoe UI', Arial, sans-serif; fill: #0f172a; }
+      .item { font: 16px 'Segoe UI', Arial, sans-serif; fill: #1e293b; }
+      .rel { stroke: #334155; stroke-width: 2.5; fill: none; marker-end: url(#arrow); }
+      .label { font: 14px 'Segoe UI', Arial, sans-serif; fill: #334155; paint-order: stroke; stroke: #f8fafc; stroke-width: 5px; }
+      .pageTitle { font: 700 28px 'Segoe UI', Arial, sans-serif; fill: #0f172a; }
+    </style>
+  </defs>
+  <rect class="bg" width="1200" height="760"/>
+  <text class="pageTitle" x="600" y="52" text-anchor="middle">Metro Smart-Card Fare System — UML</text>
+
+  <g>
+    <rect class="box" x="450" y="105" width="300" height="155"/>
+    <rect class="head" x="450" y="105" width="300" height="46"/>
+    <text class="title" x="600" y="137" text-anchor="middle">Zone «enumeration»</text>
+    <text class="item" x="475" y="177">Inner</text>
+    <text class="item" x="475" y="204">Middle</text>
+    <text class="item" x="475" y="231">Outer</text>
+  </g>
+
+  <g>
+    <rect class="box" x="70" y="515" width="300" height="220"/>
+    <rect class="head" x="70" y="515" width="300" height="48"/>
+    <text class="title" x="220" y="547" text-anchor="middle">SmartCard</text>
+    <text class="item" x="94" y="590">- cardId: string</text>
+    <text class="item" x="94" y="615">- balancePaise: long long</text>
+    <text class="item" x="94" y="648">+ canTravel(farePaise): bool</text>
+    <text class="item" x="94" y="675">+ deduct(farePaise): bool</text>
+    <text class="item" x="94" y="702">+ recharge(amountPaise): bool</text>
+  </g>
+
+  <g>
+    <rect class="box" x="450" y="515" width="300" height="190"/>
+    <rect class="head" x="450" y="515" width="300" height="48"/>
+    <text class="title" x="600" y="547" text-anchor="middle">Journey</text>
+    <text class="item" x="474" y="590">- zone: Zone</text>
+    <text class="item" x="474" y="615">- hour: int</text>
+    <text class="item" x="474" y="640">- weekend: bool</text>
+    <text class="item" x="474" y="675">+ quoteFare(table): long long</text>
+  </g>
+
+  <g>
+    <rect class="box" x="830" y="265" width="300" height="190"/>
+    <rect class="head" x="830" y="265" width="300" height="48"/>
+    <text class="title" x="980" y="297" text-anchor="middle">Passenger</text>
+    <text class="item" x="854" y="340">- passengerId: string</text>
+    <text class="item" x="854" y="367">- category: PassengerCategory</text>
+    <text class="item" x="854" y="405">+ eligibleForConcession(): bool</text>
+  </g>
+
+  <g>
+    <rect class="box" x="830" y="515" width="300" height="190"/>
+    <rect class="head" x="830" y="515" width="300" height="48"/>
+    <text class="title" x="980" y="547" text-anchor="middle">FareTable</text>
+    <text class="item" x="854" y="590">- baseFarePaise: long long</text>
+    <text class="item" x="854" y="615">- peakPercent: int</text>
+    <text class="item" x="854" y="640">- concessionPercent: int</text>
+    <text class="item" x="854" y="675">+ calculate(zone, hour, category)</text>
+  </g>
+
+  <path class="rel" d="M370 620 L450 620"/>
+  <text class="label" x="410" y="606" text-anchor="middle">pays for</text>
+  <text class="label" x="410" y="645" text-anchor="middle">1 to 0..*</text>
+
+  <path class="rel" d="M750 620 L830 620"/>
+  <text class="label" x="790" y="606" text-anchor="middle">requests fare</text>
+
+  <path class="rel" d="M600 515 L600 260"/>
+  <text class="label" x="616" y="396">selects</text>
+
+  <path class="rel" d="M980 455 L980 515"/>
+  <text class="label" x="995" y="490">supplies category</text>
+</svg>

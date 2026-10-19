@@ -1,9 +1,18 @@
 START
-  Read zone, hour, passenger category, and card balance
-  If an input is invalid, reject the journey
-  Find the zone base fare in integer paise
-  If hour is in 08:00-09:59 or 17:00-19:59, add 20% in integer paise
-  Apply the documented passenger concession
-  If balance minus fare is below 5000 paise, deny and leave balance unchanged
-  Otherwise deduct fare and report fare and remaining balance
+  Store the Inner, Middle, and Outer fares as 1000, 2000, and 3000 paise
+  Set the minimum remaining card balance to 5000 paise
+  FOR each journey (zone, hour, balance)
+    IF hour is outside 0..23, reject the journey and leave balance unchanged
+    Use SWITCH to select the zone base fare; reject an unknown zone
+    Set peak to true only for 08:00 <= hour < 10:00 or 17:00 <= hour < 20:00
+    Set fare to base fare
+    IF peak, add 20 percent using integer paise arithmetic
+    IF balance is less than fare or balance - fare is below 5000 paise
+      Deny the journey and leave balance unchanged
+    ELSE
+      Deduct fare and print fare and remaining balance
+    END IF
+  END FOR
+  Check Inner at exactly 10:00; it must be off-peak and cost 1000 paise
+  Check Outer at exactly 20:00; it must be off-peak and cost 3000 paise
 END

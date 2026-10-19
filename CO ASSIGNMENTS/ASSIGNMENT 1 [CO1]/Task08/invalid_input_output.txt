@@ -1,12 +1,24 @@
-Compiler: clang version 23.1.1 (https://github.com/llvm/llvm-project.git 6dfe1677ab8dffbc6ec13d53a1e0215d75147689)
+Compiler: clang version 23.1.1 (LLVM-MinGW, x86_64 Windows GNU)
 Standard: C++11
 Command: g++ -std=c++11 -Wall -Wextra -Wconversion -pedantic safe_io.cpp -o safe_io.exe
 Input:
 abc
+4
+1
+24
 8
 -5
+100
 Output:
-Hour (0-23): Invalid number. Try again.
-Hour (0-23): Recharge in rupees: Negative recharge rejected.
-Exit code: 1
-
+Zone (1=Inner, 2=Middle, 3=Outer): Invalid number. Try again.
+Zone (1=Inner, 2=Middle, 3=Outer): Invalid zone. Enter 1, 2, or 3.
+Zone (1=Inner, 2=Middle, 3=Outer): Departure hour (0-23): Invalid hour. Enter 0 through 23.
+Departure hour (0-23): Card balance in rupees: Balance cannot be negative.
+Card balance in rupees: 
+===== Journey Report =====
+Zone: Inner
+Departure time: 08:00
+Fare: Rs 12.00
+Status: APPROVED
+Balance after journey: Rs 88.00
+Exit code: 0

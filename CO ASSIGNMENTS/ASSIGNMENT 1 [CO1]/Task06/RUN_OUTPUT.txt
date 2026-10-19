@@ -1,9 +1,12 @@
-Compiler: clang version 23.1.1 (https://github.com/llvm/llvm-project.git 6dfe1677ab8dffbc6ec13d53a1e0215d75147689)
+Compiler: clang version 23.1.1 (LLVM-MinGW, x86_64 Windows GNU)
 Standard: C++11
-Command: g++ -std=c++11 -Wall -Wextra -Wconversion -pedantic fare_complete.cpp -o fare_complete.exe
+Command: g++ -std=c++11 -Wall -Wextra -Wconversion -pedantic Task06/fare_complete.cpp -o Task06/fare_complete.exe
 Output:
+Sample journeys:
 Fare Rs 10.00  balance Rs 90
 Fare Rs 36.00  balance Rs 54
 Denied (low balance)  balance Rs 54
+Boundary journey checks:
+10:00 Inner is off-peak; fare Rs 10.00; allowed; balance Rs 90
+20:00 Outer is off-peak; fare Rs 30.00; allowed; balance Rs 70
 Exit code: 0
-

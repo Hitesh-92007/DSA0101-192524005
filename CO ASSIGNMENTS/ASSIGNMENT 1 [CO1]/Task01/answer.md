@@ -20,6 +20,10 @@ A procedural version could store balances, categories, and journey data in struc
 
 ## UML sketch
 
+![Rendered UML class diagram](evidence/uml_class_diagram.svg)
+
+The diagram is also provided as Mermaid source below so its classes and relationships remain editable in Markdown.
+
 ```mermaid
 classDiagram
     class SmartCard {

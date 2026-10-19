@@ -1,15 +1,15 @@
 # Assignment 1 [CO1] — Report Draft
 
-Student: [Name]
-Register number: [Register number]
+Student: Hitesh
+Register number: 192524005
 GitHub link: [Assignment folder in DSA0101-192524005](https://github.com/Hitesh-92007/DSA0101-192524005/tree/main/CO%20ASSIGNMENTS/ASSIGNMENT%201%20%5BCO1%5D)
 Compiler/version: g++ command provided by LLVM-MinGW (Clang 23.1.1), C++11
 
-Add your name and register number. Reference predictions for Tasks 4 and 5 were recorded with assistance before the executions; the actual outputs and compiler diagnostics are now saved in their task folders. If your instructor requires independent predictions, replace the reference text with your own before rerunning. Each task's `evidence/` folder contains screenshots of the answer or source and, for coding tasks, the saved actual run transcript displayed in Notepad. These output images show the recorded output text, not a live terminal window. Detailed answers are in each task's `answer.md`.
+Reference predictions for Tasks 4 and 5 were prepared with assistance before the recorded executions. If the instructor requires independent predictions, write your own before rerunning; the existing prediction files are labelled as references. Each task's `evidence/` folder contains screenshots of the answer or source and, for coding tasks, a screenshot of the saved actual run transcript displayed in Notepad. These output images show the recorded output text, not a live terminal window. Detailed answers are in each task's `answer.md`.
 
 ## Assumptions
 
-The assignment does not specify the student/senior concession percentage. This draft assumes 50% and makes that assumption replaceable; confirm the rule with the faculty. Peak windows are start-inclusive/end-exclusive: 08:00–09:59 and 17:00–19:59. Money is integer paise. Task 6's supplied program uses only base fare and peak surcharge. In the general example, surcharge is applied before concession. Minimum post-trip balance is 5000 paise.
+The assignment does not specify the student/senior concession percentage. Any 50% example is a replaceable assumption; confirm the rate and stacking order with the faculty. Peak windows are start-inclusive/end-exclusive: 08:00–09:59 and 17:00–19:59. Money is integer paise. Task 6 uses the supplied base fare and peak surcharge rules; Task 8 also does not invent a concession rate. Minimum post-trip balance is 5000 paise.
 
 ## Task 1 — OOP analysis
 
@@ -28,7 +28,7 @@ Examples: keyword switch; identifier peakHour; constant 20; operator >=; punctua
 
 ## Task 3 — Types and compatibility
 
-Use bool for flags; enum class Zone for zones; int for hours and percentages; long long for paise totals and journey counts; std::string for IDs. Store money as integer paise because binary floating point cannot represent many decimal fractions exactly. A typical signed 32-bit int can hold whole-rupee totals at 3 million journeys, but not 10,800,000,000 paise (3 million times the maximum peak fare of 3600 paise). Use long long. On the tested 64-bit Windows setup, Task03 printed: `bool 1 char 1 int 4 long long 8 float 4 double 8 bytes`; `INT_MIN = -2147483648`, `INT_MAX = 2147483647`; maximum network total = 10,800,000,000 paise; ten additions of 0.1 = 0.99999999999999989.
+Use `bool` for flags; `enum class Zone` for zones; `int` for hours and percentages; `long long` for paise totals and journey counts; and `std::string` for IDs. `unsigned int` can represent a non-negative count, but validate signed user input before conversion and avoid unsigned subtraction for balances. `auto` deduces the initializer's type at compile time; in Task03 it deduces `long long`. Store money as integer paise because binary floating point cannot represent many decimal fractions exactly. On the tested 64-bit Windows setup, Task03 measured `bool=1`, `char=1`, `int=4`, `long long=8`, `unsigned int=4`, `float=4`, and `double=8` bytes; these sizes are implementation-dependent. It printed `INT_MIN = -2147483648`, `INT_MAX = 2147483647`, `unsigned int` range 0..4294967295, and maximum network total 10,800,000,000 paise (3 million trips at the Rs 36 peak fare). This total does not fit `int`. Ten additions of 0.1 produced 0.99999999999999989.
 
 ## Task 4 — Conversions
 
@@ -44,9 +44,9 @@ Reference pre-run prediction is in `Task05/MY_PREDICTION.txt`. The actual output
 
 ## Task 6 — Control flow
 
-Pseudocode: validate zone/hour/category; select base fare; add 20% in peak hours using integer paise arithmetic; apply the documented concession; deny without changing balance if balance minus fare is below 5000; otherwise deduct and print fare and balance. Use switch for a small fixed enum, if for ranges, range-based for for known trip lists, and while for retrying invalid input. Include a default branch for invalid enum values. Task06/fare_complete.cpp fills the supplied TODOs. Add explicit tests at exactly 10:00 and 20:00; these are off-peak.
+Pseudocode: validate zone and hour; select base fare; add 20% during the peak windows using integer paise arithmetic; deny without changing balance if the fare would leave less than 5000 paise; otherwise deduct and print fare and balance. Use switch for a small fixed enum, if for ranges, range-based for for a known trip list, and while for retrying invalid input. Include a default branch for invalid enum values. Task06/fare_complete.cpp fills the supplied TODOs and tests exactly 10:00 and 20:00; both are off-peak.
 
-Local run: Inner off-peak cost Rs 10.00 and left Rs 90; Outer peak cost Rs 36.00 and left Rs 54; the next Middle trip was denied because it would leave less than the required Rs 50. The run output is in `Task06/RUN_OUTPUT.txt`.
+Local run: Inner off-peak cost Rs 10.00 and left Rs 90; Outer peak cost Rs 36.00 and left Rs 54; the next Middle trip was denied because it would leave less than the required Rs 50. The explicit 10:00 Inner check cost Rs 10.00 and the 20:00 Outer check cost Rs 30.00; both were allowed as off-peak. The run output is in `Task06/RUN_OUTPUT.txt`.
 
 Array lookup and switch are both O(1); a table uses a small fixed amount of memory. Validate enum values before indexing. Explain how adding Airport changes the switch/table.
 
@@ -56,7 +56,7 @@ Task07 contains both implementations. Both have O(1) affordability/deduction and
 
 ## Task 8 — Input/output
 
-safe_io.cpp checks stream failure, clears the failure state, and discards the bad line before retrying. It validates hour and negative recharge. Integer quotient/remainder prints paise exactly; iomanip can format decimal values. getline plus stoi is O(L) for a line of length L and uses O(L) buffer space; it can reject trailing garbage more deliberately, while formatted extraction is concise for tokens. A valid `8`, `250` input printed `Accepted recharge = Rs 250.00 (25000 paise)`. Nonnumeric hour input was rejected and retried; a negative recharge was rejected. Transcripts are in the Task08 folder.
+safe_io.cpp checks stream failure, clears the failure state, and discards the bad line before retrying. It validates zone (1–3), hour (0–23), and non-negative card balance. Integer quotient/remainder and iomanip print paise exactly. A valid input of zone 1, hour 8, and balance Rs 100 produces an Inner-zone report, Rs 12.00 fare, APPROVED status, and Rs 88.00 remaining. The recovery run rejects nonnumeric input, zone 4, hour 24, and a negative balance before accepting valid values and printing the report. Transcripts and corresponding input files are in the Task08 folder. A `getline` plus `stoi` approach is O(L) time and O(L) buffer space for a line of length L; it can reject trailing garbage more explicitly, while formatted extraction is concise for tokens.
 
 ## Task 9 — Implementation/testing
 
@@ -91,4 +91,4 @@ Add Airport at Rs 60, a 10% weekend discount that replaces peak surcharge, and a
 
 ## Conclusion
 
-The recommended design centralizes fare rules, uses typed zones and integer paise, validates input, and protects card balance. Before submission, add your name/register number, replace the reference predictions if independent predictions are required, and confirm the instructor accepts `DSA0101-192524005` under the PDF's repository naming requirement.
+The recommended design centralizes fare rules, uses typed zones and integer paise, validates input, and protects card balance. Before submission, replace the reference predictions if independent predictions are required and confirm the instructor accepts `DSA0101-192524005` under the PDF's repository naming requirement. Replace “Hitesh” with the full name expected by the instructor if needed.
