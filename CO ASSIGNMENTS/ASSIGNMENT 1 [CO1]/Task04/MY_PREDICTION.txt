@@ -1,5 +1,7 @@
-Before running Task04/conversions.cpp, write your own exact output prediction here and add the date/time. After recording the prediction, run the program and compare it with the actual output.
+Reference prediction prepared before the execution record on 2026-10-19. Review and understand each conversion. If your instructor requires a prediction written independently, write your own before running the program.
 
-Prediction:
-
-
+Predicted output:
+3 3.5
+C 68
+1 true
+s >= u
