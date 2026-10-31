@@ -1,0 +1,4 @@
+C:\Users\Hitesh\Documents\Codex\2026-10-15\i-x20\work\CO2_Assignment2\Task02\q2_return_reference.cpp:63:12: warning: reference to stack memory associated with local variable 'localMark' returned [-Wreturn-stack-address]
+   63 |     return localMark; // Deliberately unsafe: never call this function.
+      |            ^~~~~~~~~
+1 warning generated.

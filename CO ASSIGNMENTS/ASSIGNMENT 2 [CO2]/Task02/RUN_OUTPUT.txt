@@ -1,0 +1,10 @@
+Highest before moderation: 91
+Array after +2 through reference: 93
+Independent copy changed to: 100
+Const reference sees: 93
+Changing copy leaves array at: 93
+Index alternative: 1 -> 93
+Pointer alternative: 93
+Vector size after append: 4
+A reference into a vector must not be used after a reallocation.
+Old capacity before append: 3
