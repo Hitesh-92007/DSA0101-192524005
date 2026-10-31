@@ -1,0 +1,6 @@
+Sample maximum index before update: 1
+Sample maximum index after lowering old maximum: 3
+marks=10000 queries=1000
+scan index=5000 checksum=5000000 elapsed_us=6496
+cached index=5000 checksum=5000000 elapsed_us=2
+same result: true
