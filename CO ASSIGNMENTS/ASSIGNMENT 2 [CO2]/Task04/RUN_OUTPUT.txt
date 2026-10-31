@@ -1,0 +1,12 @@
+Mini-statement for account 192524005
+1. Deposit +300 | balance 1400
+2. Withdrawal -50 | balance 1350
+3. Deposit +100 | balance 1450
+4. Withdrawal -25 | balance 1425
+5. Deposit +75 | balance 1500
+6. Withdrawal -40 | balance 1460
+7. Deposit +60 | balance 1520
+8. Withdrawal -30 | balance 1490
+9. Deposit +90 | balance 1580
+10. Withdrawal -20 | balance 1560
+Current balance: 1560
