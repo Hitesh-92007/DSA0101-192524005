@@ -1,0 +1,12 @@
+Given program output:
+1 12 13
+1 100
+16 13 6 
+Concession comparison on separate 45000 fees:
+value (10%): 45000
+reference (15%): 38250
+pointer (25%): 33750
+Completed reference TODO:
+after call by value : 45000
+after call by reference: 40500
+combined 10%, 15%, 25% (integer rupees): 25819
