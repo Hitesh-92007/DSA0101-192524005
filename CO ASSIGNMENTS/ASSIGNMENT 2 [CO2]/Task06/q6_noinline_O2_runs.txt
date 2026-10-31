@@ -1,0 +1,25 @@
+Run 1
+Given program result: 205 false
+Across noon: 15 true
+Same time: 0 false
+Non-inline case: calls=10000000 checksum=4804631830 elapsed_us=21064
+Run 2
+Given program result: 205 false
+Across noon: 15 true
+Same time: 0 false
+Non-inline case: calls=10000000 checksum=4804631830 elapsed_us=23625
+Run 3
+Given program result: 205 false
+Across noon: 15 true
+Same time: 0 false
+Non-inline case: calls=10000000 checksum=4804631830 elapsed_us=15039
+Run 4
+Given program result: 205 false
+Across noon: 15 true
+Same time: 0 false
+Non-inline case: calls=10000000 checksum=4804631830 elapsed_us=17005
+Run 5
+Given program result: 205 false
+Across noon: 15 true
+Same time: 0 false
+Non-inline case: calls=10000000 checksum=4804631830 elapsed_us=17484
