@@ -1,0 +1,13 @@
+Given Token program output:
+101 103 104 4
+Bus ticket array output:
+Asha: Seat 1
+Bala: Seat 2
+Chitra: Seat 3
+Dev: Waiting
+Issued: 3
+Ticket created after the capacity is reached:
+Esha: Waiting
+Shared count inside second call: 3
+Esha: Waiting
+Shared count inside second call: 3
