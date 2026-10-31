@@ -1,0 +1,6 @@
+charge(2) -> int grams: Rs 40.10
+charge(2.0f) -> double kg: Rs 110.00
+charge(2.0) -> double kg: Rs 110.00
+charge(750, true) -> int grams, express: Rs 102.50
+charge(Parcel) -> Parcel overload: Rs 118.75
+charge(2.5, false, true) -> double kg, insured: Rs 137.50
