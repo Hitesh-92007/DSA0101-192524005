@@ -1,0 +1,27 @@
+Q4: 1,000,000 additions at -O2 (five process runs)
+run 1: 1,000,000 additions: Money_us=1337, double_us=3425, final_double=10000.000000171856, checksums=500000500000/5000005000.0666838
+run 2: 1,000,000 additions: Money_us=711, double_us=2818, final_double=10000.000000171856, checksums=500000500000/5000005000.0666838
+run 3: 1,000,000 additions: Money_us=1001, double_us=3219, final_double=10000.000000171856, checksums=500000500000/5000005000.0666838
+run 4: 1,000,000 additions: Money_us=693, double_us=2584, final_double=10000.000000171856, checksums=500000500000/5000005000.0666838
+run 5: 1,000,000 additions: Money_us=1154, double_us=4829, final_double=10000.000000171856, checksums=500000500000/5000005000.0666838
+
+Q5: 10,000,000 increments at -O0 (five process runs)
+run 1: 10,000,000 increments: prefix_us=62500, postfix_us=64701, checksums=431278264000/431278200000
+run 2: 10,000,000 increments: prefix_us=56888, postfix_us=58627, checksums=431278264000/431278200000
+run 3: 10,000,000 increments: prefix_us=61503, postfix_us=76876, checksums=431278264000/431278200000
+run 4: 10,000,000 increments: prefix_us=56424, postfix_us=56304, checksums=431278264000/431278200000
+run 5: 10,000,000 increments: prefix_us=56593, postfix_us=56601, checksums=431278264000/431278200000
+
+Q5: 10,000,000 increments at -O2 (five process runs)
+run 1: 10,000,000 increments: prefix_us=54184, postfix_us=51559, checksums=431278264000/431278200000
+run 2: 10,000,000 increments: prefix_us=52921, postfix_us=70221, checksums=431278264000/431278200000
+run 3: 10,000,000 increments: prefix_us=56071, postfix_us=55855, checksums=431278264000/431278200000
+run 4: 10,000,000 increments: prefix_us=60570, postfix_us=52531, checksums=431278264000/431278200000
+run 5: 10,000,000 increments: prefix_us=53908, postfix_us=48927, checksums=431278264000/431278200000
+
+Q6: 100,000 concatenations at -O2 (five process runs)
+run 1: 100,000 concatenations: Text_us=5086, std_string_us=3567, checksums=9021673/9021673
+run 2: 100,000 concatenations: Text_us=4969, std_string_us=3567, checksums=9021673/9021673
+run 3: 100,000 concatenations: Text_us=4836, std_string_us=5319, checksums=9021673/9021673
+run 4: 100,000 concatenations: Text_us=6259, std_string_us=4489, checksums=9021673/9021673
+run 5: 100,000 concatenations: Text_us=5352, std_string_us=3607, checksums=9021673/9021673
