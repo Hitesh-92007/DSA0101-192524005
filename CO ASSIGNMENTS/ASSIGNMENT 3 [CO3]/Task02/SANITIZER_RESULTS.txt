@@ -1,0 +1,43 @@
+=== q2_deep_asan compile exit 0 ===
+=== q2_deep_asan run exit 0 ===
+deep-copy independence: Ibuprofen ORS | Paracetamol Cetirizine | Paracetamol ORS
+self-assignment: Ibuprofen ORS
+by-value count=2
+by-reference count=2
+parameter copies: value=1, const-reference=0
+copy benchmark: medicines=10, repetitions=10000, total_us=24803, checksum=100000
+copy benchmark: medicines=1000, repetitions=100, total_us=4578, checksum=1200
+copy benchmark: medicines=100000, repetitions=1, total_us=2354, checksum=14
+
+=== q2_shallow_asan compile exit 0 ===
+=== q2_shallow_asan run exit 1 ===
+==120812==AddressSanitizer: loaded array cookie from free-d memory; expect a double-free report
+=================================================================
+==120812==ERROR: AddressSanitizer: attempting double-free on 0x1285d0fa0020 in thread T0:
+    #0 0x7ffb4d1e010b in operator delete[](void*) /home/runner/work/llvm-mingw/llvm-mingw/llvm-project/compiler-rt/lib/asan/asan_new_delete.cpp:178:46
+    #1 0x7ff6bdbc1c37 in Prescription::~Prescription() C:/Users/Hitesh/Documents/Codex/2026-11-07/https-github-com-hitesh-92007-dsa0101/work/assignment3\Task02/q2_prescription_deep_copy.cpp:62:23
+    #2 0x7ff6bdbc1c37 in main C:/Users/Hitesh/Documents/Codex/2026-11-07/https-github-com-hitesh-92007-dsa0101/work/assignment3\Task02/q2_prescription_deep_copy.cpp:146:1
+    #3 0x7ff6bdbc10fa in __tmainCRTStartup /home/runner/work/llvm-mingw/llvm-mingw/mingw-w64/mingw-w64-crt/build-x86_64/../crt/crtexe.c:266:11
+    #4 0x7ffbe957dda6  (C:\WINDOWS\System32\KERNEL32.DLL+0x18002dda6)
+    #5 0x7ffbeac3ee4b  (C:\WINDOWS\SYSTEM32\ntdll.dll+0x18007ee4b)
+
+0x1285d0fa0020 is located 0 bytes inside of 56-byte region [0x1285d0fa0020,0x1285d0fa0058)
+freed by thread T0 here:
+    #0 0x7ffb4d1e010b in operator delete[](void*) /home/runner/work/llvm-mingw/llvm-mingw/llvm-project/compiler-rt/lib/asan/asan_new_delete.cpp:178:46
+    #1 0x7ff6bdbc1b87 in Prescription::~Prescription() C:/Users/Hitesh/Documents/Codex/2026-11-07/https-github-com-hitesh-92007-dsa0101/work/assignment3\Task02/q2_prescription_deep_copy.cpp:62:23
+    #2 0x7ff6bdbc1b87 in main C:/Users/Hitesh/Documents/Codex/2026-11-07/https-github-com-hitesh-92007-dsa0101/work/assignment3\Task02/q2_prescription_deep_copy.cpp:146:1
+    #3 0x7ff6bdbc10fa in __tmainCRTStartup /home/runner/work/llvm-mingw/llvm-mingw/mingw-w64/mingw-w64-crt/build-x86_64/../crt/crtexe.c:266:11
+    #4 0x7ffbe957dda6  (C:\WINDOWS\System32\KERNEL32.DLL+0x18002dda6)
+    #5 0x7ffbeac3ee4b  (C:\WINDOWS\SYSTEM32\ntdll.dll+0x18007ee4b)
+
+previously allocated by thread T0 here:
+    #0 0x7ffb4d1df8f1 in operator new[](unsigned long long) /home/runner/work/llvm-mingw/llvm-mingw/llvm-project/compiler-rt/lib/asan/asan_new_delete.cpp:111:37
+    #1 0x7ff6bdbc184e in Prescription::Prescription(int) C:/Users/Hitesh/Documents/Codex/2026-11-07/https-github-com-hitesh-92007-dsa0101/work/assignment3\Task02/q2_prescription_deep_copy.cpp:16:45
+    #2 0x7ff6bdbc184e in main C:/Users/Hitesh/Documents/Codex/2026-11-07/https-github-com-hitesh-92007-dsa0101/work/assignment3\Task02/q2_prescription_deep_copy.cpp:93:18
+    #3 0x7ff6bdbc10fa in __tmainCRTStartup /home/runner/work/llvm-mingw/llvm-mingw/mingw-w64/mingw-w64-crt/build-x86_64/../crt/crtexe.c:266:11
+    #4 0x7ffbe957dda6  (C:\WINDOWS\System32\KERNEL32.DLL+0x18002dda6)
+    #5 0x7ffbeac3ee4b  (C:\WINDOWS\SYSTEM32\ntdll.dll+0x18007ee4b)
+
+SUMMARY: AddressSanitizer: double-free C:/Users/Hitesh/Documents/Codex/2026-11-07/https-github-com-hitesh-92007-dsa0101/work/assignment3\Task02/q2_prescription_deep_copy.cpp:62:23 in Prescription::~Prescription()
+==120812==ABORTING
+

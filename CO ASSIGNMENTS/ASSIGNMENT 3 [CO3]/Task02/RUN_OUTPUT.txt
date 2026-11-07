@@ -1,0 +1,8 @@
+deep-copy independence: Ibuprofen ORS | Paracetamol Cetirizine | Paracetamol ORS
+self-assignment: Ibuprofen ORS
+by-value count=2
+by-reference count=2
+parameter copies: value=1, const-reference=0
+copy benchmark: medicines=10, repetitions=10000, total_us=1797, checksum=100000
+copy benchmark: medicines=1000, repetitions=100, total_us=368, checksum=1200
+copy benchmark: medicines=100000, repetitions=1, total_us=1464, checksum=14
