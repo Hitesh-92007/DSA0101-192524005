@@ -1,0 +1,17 @@
+construct Stack (2x3)
+Stack seat map:
+  row 0: . . .
+  row 1: . . X
+booking rejected: index out of range
+construct Block (1x2)
+leaving inner block
+destroy Block (booked=1)
+construct Heap (1x2)
+destroy Heap (booked=1)
+construct Zero-rows (0x20)
+Zero-rows seat map:
+estimated dynamic seat-map bytes 10x20 = 280
+estimated dynamic seat-map bytes 100x200 = 20800
+estimated dynamic seat-map bytes 1000x2000 = 2008000
+destroy Zero-rows (booked=0)
+destroy Stack (booked=1)
