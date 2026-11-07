@@ -1,0 +1,7 @@
+frequency=50.0000 Hz, omega=314.1593 rad/s
+ZR=10.0000+0.0000j ohm, ZL=0.0000+31.4159j ohm, ZC=0.0000-31.8310j ohm
+series RLC=10.0000-0.4151j ohm, magnitude=10.0086 ohm
+parallel RLC=9.9998+0.0415j ohm, magnitude=9.9999 ohm
+subtraction check=4.0000+1.0000j, equality check=1
+std::complex check series=10.0000-0.4151j
+zero-impedance division: rejected (complex division by zero impedance)

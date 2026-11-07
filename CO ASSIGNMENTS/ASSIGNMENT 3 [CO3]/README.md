@@ -48,12 +48,12 @@ For Q5, compile and run once with `-O0` and once with `-O2`. For Q2 and Q3, the 
 | Q2 | Deep copies remain independent; self-assignment is safe; AddressSanitizer catches the shallow-copy double free. |
 | Q3 | Stack, block, and heap events release seat maps at the correct lifetime boundary; the seat-map payload estimates are 280 B, 20,800 B, and 2,008,000 B. |
 | Q4 | Paise arithmetic prints Rs 200.00, carries Rs 0.75 + Rs 0.50 to Rs 1.25, and represents negative subtraction exactly. |
-| Q5 | The reference prediction is `5 7 7`; checked indexing rejects -1 and `size`; rollovers work. |
+| Q5 | The expected prediction is `5 7 7`; checked indexing rejects -1 and `size`; rollovers work. |
 | Q6 | Raw-buffer text copies are independent; C++17 elides the returned copies in `a+b+c`; the five-run median for `std::string` was faster in this local benchmark. |
 | Q7 | Series impedance is 10.0000−j0.4151 Ω and parallel impedance is 9.9998+j0.0415 Ω; zero division is rejected. |
 
 ## Evidence and integrity
 
-Predictions in the report are reference predictions prepared before the recorded execution. They do not claim that the student independently wrote down predictions before running. If the instructor requires a personal pre-run prediction, write it before rerunning each program. Text run transcripts are included; screenshot images have not been captured in this package, although the assignment PDF asks for output screenshots. Add genuine source/output screenshots from your lab session before final submission. The Windows AddressSanitizer runtime supports address checks but reports that LeakSanitizer is unavailable; therefore the intentional missing-delete run does not produce a leak report. The code and transcript make that omitted `delete` visible.
+Each task has a `PREDICTION.md` prepared by the assistant before the final verification rerun. Exploratory executions happened earlier, so these are not personal, independently authored predictions made before the first run. All seven programs were rerun; both Q5 optimization levels and the other six task runs exited successfully. Updated stdout transcripts are included. A genuine Notepad capture of Q1 output appeared in the conversation, but no screenshot image files are included in this package; add the source/output screenshots requested by the assignment if the instructor requires them. The Windows AddressSanitizer runtime supports address checks but reports that LeakSanitizer is unavailable; therefore the intentional missing-delete run does not produce a leak report. The code and transcript make that omitted `delete` visible.
 
 This assignment was prepared with AI coding and writing assistance. Hitesh should review every explanation and be able to explain the implementation during the verification discussion. No personal lab execution or independent authorship is claimed here.
