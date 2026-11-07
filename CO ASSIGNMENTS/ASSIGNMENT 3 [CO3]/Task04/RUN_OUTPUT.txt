@@ -1,0 +1,7 @@
+subtotal: Rs 200.00
+subtotal equals Rs 200: true
++= result: Rs 200.00, Rs 79.25 < Rs 120.75: true
+paise carry (Rs 0.75 + Rs 0.50): Rs 1.25
+negative subtraction: Rs -0.75
+input parse: Rs 12.34
+1,000,000 additions: Money_us=1716, double_us=6162, final_double=10000.000000171856, checksums=500000500000/5000005000.0666838

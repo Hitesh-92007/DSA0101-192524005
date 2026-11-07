@@ -1,0 +1,6 @@
+Default constructor: title="", author="", copies=0
+Title-only constructor: title="The Pragmatic Programmer", author="Unknown", copies=0
+Full constructor: title="Clean Code", author="Robert C. Martin", copies=3
+Array of default-constructed books: 2 records created
+Negative-copy test: rejected (copy count cannot be negative)
+reorder probe=1 2

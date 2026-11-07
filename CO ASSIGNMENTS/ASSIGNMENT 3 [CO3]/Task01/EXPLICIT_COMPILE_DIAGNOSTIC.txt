@@ -1,0 +1,13 @@
+assignment3\Task01\q1_explicit_probe.cpp:18:15: error: no viable conversion from 'int' to 'PageCount'
+   18 |     PageCount pages = 300;
+      |               ^       ~~~
+assignment3\Task01\q1_explicit_probe.cpp:3:7: note: candidate constructor (the implicit copy constructor) not viable: no known conversion from 'int' to 'const PageCount &' for 1st argument
+    3 | class PageCount {
+      |       ^~~~~~~~~
+assignment3\Task01\q1_explicit_probe.cpp:3:7: note: candidate constructor (the implicit move constructor) not viable: no known conversion from 'int' to 'PageCount &&' for 1st argument
+    3 | class PageCount {
+      |       ^~~~~~~~~
+assignment3\Task01\q1_explicit_probe.cpp:6:14: note: explicit constructor is not a candidate
+    6 |     explicit PageCount(int pages) : pages_(pages) {}
+      |              ^
+1 error generated.
