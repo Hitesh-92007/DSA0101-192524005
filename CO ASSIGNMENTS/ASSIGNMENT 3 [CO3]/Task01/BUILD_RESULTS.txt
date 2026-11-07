@@ -1,0 +1,30 @@
+Without explicit: compiled successfully.
+Implicit conversion produced 300 pages
+With explicit: expected compile failure (exit 1).
+assignment3\Task01\q1_explicit_probe.cpp:18:15: error: no viable conversion from 'int' to 'PageCount'
+   18 |     PageCount pages = 300;
+      |               ^       ~~~
+assignment3\Task01\q1_explicit_probe.cpp:3:7: note: candidate constructor (the implicit copy constructor) not viable: no known conversion from 'int' to 'const PageCount &' for 1st argument
+    3 | class PageCount {
+      |       ^~~~~~~~~
+assignment3\Task01\q1_explicit_probe.cpp:3:7: note: candidate constructor (the implicit move constructor) not viable: no known conversion from 'int' to 'PageCount &&' for 1st argument
+    3 | class PageCount {
+      |       ^~~~~~~~~
+assignment3\Task01\q1_explicit_probe.cpp:6:14: note: explicit constructor is not a candidate
+    6 |     explicit PageCount(int pages) : pages_(pages) {}
+      |              ^
+1 error generated.
+No default constructor array: expected compile failure (exit 1).
+assignment3\Task01\q1_no_default_array.cpp:12:10: error: no matching constructor for initialization of 'Book[2]'
+   12 |     Book books[2]; // Expected compile error: no default constructor is available.
+      |          ^
+assignment3\Task01\q1_no_default_array.cpp:5:14: note: candidate constructor not viable: requires single argument 'title', but no arguments were provided
+    5 |     explicit Book(std::string title) : title_(title) {}
+      |              ^    ~~~~~~~~~~~~~~~~~
+assignment3\Task01\q1_no_default_array.cpp:3:7: note: candidate constructor (the implicit copy constructor) not viable: requires 1 argument, but 0 were provided
+    3 | class Book {
+      |       ^~~~
+assignment3\Task01\q1_no_default_array.cpp:3:7: note: candidate constructor (the implicit move constructor) not viable: requires 1 argument, but 0 were provided
+    3 | class Book {
+      |       ^~~~
+1 error generated.
