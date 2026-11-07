@@ -1,0 +1,11 @@
+counter prediction program: 5 7 7
+24-hour rollover: 00:00:00
+minute rollover: 00:01:00
+hour rollover: 01:00:00
+time comparison: 00:00:01 < 00:00:02 is true, equality is true
+playback: 00:00:00 Blue in Green
+00:00:01 So What (live)
+00:00:02 Take Five
+playlist[-1]: playlist index out of range
+playlist[3]: playlist index out of range
+10,000,000 increments: prefix_us=74060, postfix_us=64926, checksums=431278264000/431278200000
