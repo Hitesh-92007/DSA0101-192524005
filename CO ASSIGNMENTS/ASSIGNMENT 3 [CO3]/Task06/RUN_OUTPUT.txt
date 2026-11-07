@@ -1,0 +1,6 @@
+concatenation: Hello, world!
+empty message size: 0
+copy independence and self-assignment: This message is intentionally long enough to exercise a heap allocation safely. | updated
+comparison: equal=true, different=true
+a+b+c: Hello, world!!, explicit copy constructions=0 (C++17 guaranteed elision applies to returned prvalues)
+100,000 concatenations: Text_us=7847, std_string_us=6748, checksums=9021673/9021673
