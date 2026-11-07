@@ -1,0 +1,5 @@
+assignment3\Task01\q1_book_constructors.cpp:35:22: warning: field 'second_' will be initialized after field 'first_' [-Wreorder-ctor]
+   35 |     ReorderProbe() : second_(2), first_(1) {}
+      |                      ^~~~~~~~~~  ~~~~~~~~~
+      |                      first_(1)   second_(2)
+1 warning generated.
