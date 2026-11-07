@@ -1,0 +1,9 @@
+=== q6_text_asan compile exit 0 ===
+=== q6_text_asan run exit 0 ===
+concatenation: Hello, world!
+empty message size: 0
+copy independence and self-assignment: This message is intentionally long enough to exercise a heap allocation safely. | updated
+comparison: equal=true, different=true
+a+b+c: Hello, world!!, explicit copy constructions=0 (C++17 guaranteed elision applies to returned prvalues)
+100,000 concatenations: Text_us=182579, std_string_us=158325, checksums=9021673/9021673
+
