@@ -11,3 +11,10 @@
 - [Build results](./ASSIGNMENT%201%20%5BCO1%5D/BUILD_RESULTS.md)
 
 The `.txt` files are actual console transcripts. The PDF also asks for screenshots; genuine screenshots still need to be added. Task 4 and 5 prediction files are reference predictions prepared with assistance, so replace them with your own if independent predictions are required. Add your name/register number and confirm the repository naming requirement with your instructor before submission.
+
+
+## Assignment 3 [CO3]
+
+[Open the Assignment 3 guide and full report](./ASSIGNMENT%203%20%5BCO3%5D/README.md) · [Browse all Assignment 3 tasks](./ASSIGNMENT%203%20%5BCO3%5D/)
+
+The task folders include C++ source, written answers, and console transcripts. Genuine run screenshots and independent pre-run predictions still need to be supplied by the student where required by the assignment. The report documents compiler and sanitizer limits and AI assistance.
