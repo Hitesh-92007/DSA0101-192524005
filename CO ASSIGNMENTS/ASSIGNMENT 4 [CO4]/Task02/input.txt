@@ -1,0 +1,4 @@
+Person fields: name=Hitesh, id=192524005, phone=9000000000
+Student fields: programme=CSE, CGPA=8.4
+Staff fields: department=CSE, salary=30000
+Teaching Assistant is both Student and Staff; Research Scholar is a Student with fellowship data.

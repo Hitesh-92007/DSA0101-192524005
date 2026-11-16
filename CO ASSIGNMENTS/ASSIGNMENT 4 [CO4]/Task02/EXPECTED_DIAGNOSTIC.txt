@@ -1,0 +1,13 @@
+Expected compile-time ambiguity check
+Command: g++ -std=c++17 -Wall -Wextra Task02/person_access_ambiguity.cpp -o Task02/person_access_ambiguity.exe
+Task02/person_access_ambiguity.cpp:10:32: error: non-static member 'name' found in multiple base-class subobjects of type 'Person':
+    struct TeachingAssistant -> Student -> Person
+    struct TeachingAssistant -> Staff -> Person
+   10 |     return static_cast<int>(ta.name.size()); // Expected error: name is ambiguous.
+      |                                ^
+Task02/person_access_ambiguity.cpp:3:29: note: member found by ambiguous name lookup
+    3 | struct Person { std::string name; };
+      |                             ^
+1 error generated.
+Exit code: 1
+Status: expected failure because both Person base paths provide name.

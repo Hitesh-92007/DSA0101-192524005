@@ -1,0 +1,24 @@
+Virtual-base diamond
+Compile: g++ -std=c++17 -Wall -Wextra Task02/people_hierarchy.cpp -o Task02/people_hierarchy.exe
+Run output:
+Person Student Staff TA
+Exit code: 0
+People hierarchy with TeachingAssistant and ResearchScholar
+Compile: g++ -std=c++17 -Wall -Wextra Task02/people_relationship_classes.cpp -o Task02/people_relationship_classes.exe
+Run output:
+TA: Hitesh / ID 192524005 / 9000000000 / CSE / CGPA 8.4 / CSE / salary 30000
+Scholar: Kavya / ID 192311001 / CSE / CGPA 9.1 / fellowship UGC
+Exit code: 0
+Non-virtual diamond
+Compile: g++ -std=c++17 -Wall -Wextra Task02/diamond_nonvirtual.cpp -o Task02/diamond_nonvirtual.exe
+Run output:
+Person Student Person Staff TA
+Exit code: 0
+Composition comparison
+Compile: g++ -std=c++17 -Wall -Wextra Task02/people_composition.cpp -o Task02/people_composition.exe
+Run output:
+Student name: Hitesh
+Staff department: CSE
+Two member objects each hold their own Person value.
+sizeof(Student)=88 sizeof(Staff)=88 sizeof(TeachingAssistant)=176
+Exit code: 0
