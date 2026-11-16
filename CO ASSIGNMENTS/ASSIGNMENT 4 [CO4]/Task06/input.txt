@@ -1,0 +1,6 @@
+Bicycle BIKE-01 daily=100 late_fee_per_day=15
+Two-wheeler SCOOT-01 daily=250 energy_level=75 service_due=2026-12-01 fuel=2L at 100/L
+Car CAR-01 seats=4 daily=1500 energy_level=60 service_due=2026-12-01 fuel=10L at 110/L
+Electric car EV-01 seats=5 battery=75kWh daily=2200 energy_level=80 used=18kWh at 12/kWh
+Electric bus BUS-01 seats=40 battery=300kWh daily=5000 used=45kWh at 15/kWh
+Each standard rental: 1 booked day, return 2 days late; extension demo: 1 day late

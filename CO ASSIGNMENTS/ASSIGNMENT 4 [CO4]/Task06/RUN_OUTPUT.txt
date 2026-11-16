@@ -1,0 +1,35 @@
+Vehicle rental fleet
+Compile: g++ -std=c++17 -Wall -Wextra Task06/vehicle_rental.cpp -o Task06/vehicle_rental.exe
+Run output:
+Fleet before rental
+Bicycle | BIKE-01 | Available | pedal-powered
+Two-wheeler | SCOOT-01 | Available | energy level 75%, service due 2026-12-01, fuel charge 200.000000
+Car | CAR-01 | Available | energy level 60%, service due 2026-12-01, seats 4, fuel charge 1100.000000
+Electric car | EV-01 | Available | energy level 80%, service due 2026-12-01, seats 5, battery 75.000000 kWh
+
+Rent each vehicle for 1 day
+BIKE-01: rented
+SCOOT-01: rented
+CAR-01: rented
+EV-01: rented
+
+Return after 2 late days (includes extended rental and late fee)
+BIKE-01 total charge: 330.00
+SCOOT-01 total charge: 1000.00
+CAR-01 total charge: 5800.00
+EV-01 total charge: 7116.00
+
+Fleet after return
+Bicycle | BIKE-01 | Available | pedal-powered
+Two-wheeler | SCOOT-01 | Available | energy level 75%, service due 2026-12-01, fuel charge 200.000000
+Car | CAR-01 | Available | energy level 60%, service due 2026-12-01, seats 4, fuel charge 1100.000000
+Electric car | EV-01 | Available | energy level 80%, service due 2026-12-01, seats 5, battery 75.000000 kWh
+Exit code: 0
+Electric bus extension
+Compile: g++ -std=c++17 -Wall -Wextra Task06/electric_bus_demo.cpp -o Task06/electric_bus_demo.exe
+Run output:
+Fleet extended with ElectricBus without editing existing vehicle classes
+Bicycle | BIKE-02 | Available | pedal-powered
+Electric bus | BUS-01 | Available | energy level 65%, service due 2026-12-01, capacity 40, battery 300.000000 kWh
+BUS-01 return charge with 1 late day: 11075.00
+Exit code: 0
