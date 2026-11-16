@@ -1,0 +1,15 @@
+Defective account program under AddressSanitizer
+Compile: g++ -std=c++17 -Wall -Wextra Task04/account_defects.cpp -o Task04/account_defects.exe
+Run output:
+3.5
+3.5
+Outstanding senior history buffers: 1
+Sliced copy base rate: 3.5
+Account destructor
+Account destructor
+SeniorAccount destructor; releasing history
+Account destructor
+Account destructor
+Exit code: 0
+AddressSanitizer was enabled for this run. This Windows runtime does not support LeakSanitizer, so detect_leaks=0 was used.
+No sanitizer diagnostic was emitted in this run. The defective program prints two base-destructor messages, omits the SeniorAccount destructor during deletion through Account*, and reports one outstanding history buffer. This is direct destructor/allocation tracking evidence; it is not a LeakSanitizer finding.

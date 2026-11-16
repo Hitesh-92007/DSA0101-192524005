@@ -1,0 +1,27 @@
+Defective account program under AddressSanitizer
+Compile: g++ -std=c++17 -Wall -Wextra Task04/account_defects.cpp -o Task04/account_defects.exe
+Run output:
+3.5
+3.5
+Outstanding senior history buffers: 1
+Sliced copy base rate: 3.5
+Account destructor
+Account destructor
+SeniorAccount destructor; releasing history
+Account destructor
+Account destructor
+Exit code: 0
+Repaired polymorphic account program
+Compile: g++ -std=c++17 -Wall -Wextra Task04/account_fixed.cpp -o Task04/account_fixed.exe
+Run output:
+3.5
+4
+SeniorAccount destroyed; history released
+Account destroyed
+Account destroyed
+Exit code: 0
+Static dispatch, virtual dispatch and slicing output
+Compile: g++ -std=c++17 -Wall -Wextra Task04/account_prediction.cpp -o Task04/account_prediction.exe
+Run output:
+3.5 4 3.5
+Exit code: 0

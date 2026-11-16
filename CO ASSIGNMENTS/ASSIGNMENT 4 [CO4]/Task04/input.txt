@@ -1,0 +1,4 @@
+Base rate: 3.5 percent
+Senior rate: 4.0 percent
+SeniorAccount history allocation: 100 doubles
+Expected corrected polymorphic rates: 3.5 and 4.0
