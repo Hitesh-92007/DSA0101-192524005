@@ -1,0 +1,5 @@
+Rice 60.00
+Dal 120.00
+Oil 180.00
+Discount 10 percent
+Active cart totals used for search: 250.00, 900.00, 40.00

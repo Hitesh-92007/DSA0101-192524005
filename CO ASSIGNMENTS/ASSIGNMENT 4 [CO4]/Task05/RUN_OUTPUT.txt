@@ -1,0 +1,12 @@
+Completed cart code
+Compile: g++ -std=c++17 -Wall -Wextra Task05/cart_complete.cpp -o Task05/cart_complete.exe
+Run output:
+324.00
+Exit code: 0
+Cart access methods and pointer-array search
+Compile: g++ -std=c++17 -Wall -Wextra Task05/cart_access_ways.cpp -o Task05/cart_access_ways.exe
+Run output:
+Chained cart total: 324.00
+Dynamic cart total before delete: 180.00
+Highest active cart total: 900.00
+Exit code: 0
