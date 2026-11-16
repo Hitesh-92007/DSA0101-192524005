@@ -1,0 +1,3 @@
+Professor Anita 101 basic=50000 research=10000
+LabAssistant Ravi 102 basic=30000
+GuestFaculty Meera 103 hours=20 rate=1500

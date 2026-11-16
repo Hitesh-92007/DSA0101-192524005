@@ -1,0 +1,7 @@
+Payroll hierarchy
+Compile: g++ -std=c++17 -Wall -Wextra Task01/payroll_hierarchy.cpp -o Task01/payroll_hierarchy.exe
+Run output:
+Professor | Anita | ID 101 | pay 81000.00
+Lab assistant | Ravi | ID 102 | pay 42600.00
+Guest faculty | Meera | ID 103 | pay 30000.00
+Exit code: 0

@@ -22,3 +22,9 @@ The `.txt` files are actual console transcripts. The PDF also asks for screensho
 [Open the task guide](./ASSIGNMENT%203%20%5BCO3%5D/README.md) · [Browse all task files](./ASSIGNMENT%203%20%5BCO3%5D/) · [Read the report PDF](./ASSIGNMENT%203%20%5BCO3%5D/Report/Report.pdf)
 
 Assignment 3 contains seven task folders with C++ source, answers, run transcripts, prediction notes, and source/output text views. The report explains which evidence views are rendered from files and the limitations of the sanitizer environment.
+
+## Assignment 4 [CO4]
+
+[Open the task guide](./ASSIGNMENT%204%20%5BCO4%5D/README.md) · [Browse all task files](./ASSIGNMENT%204%20%5BCO4%5D/) · [Read the report PDF](./ASSIGNMENT%204%20%5BCO4%5D/Report/CO4_Assignment4_Report.pdf) · [Download the Word report](./ASSIGNMENT%204%20%5BCO4%5D/Report/CO4_Assignment4_Report.docx)
+
+The folder contains the six CO4 task solutions, C++ source, sample inputs, run records, output captures and the final reports.
