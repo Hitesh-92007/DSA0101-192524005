@@ -1,0 +1,4 @@
+work\co5-cpp\Task_A2\nonvirtual_destructor.cpp:15:5: warning: delete called on 'Bill' that is abstract but has non-virtual destructor [-Wdelete-abstract-non-virtual-dtor]
+   15 |     delete bill; // undefined behavior; sanitizer may report size mismatch/leak
+      |     ^
+1 warning generated.
