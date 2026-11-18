@@ -1,0 +1,11 @@
+B2 error-condition tests
+case negative charge: exception: consultation must be a finite non-negative amount
+case claim above cover: audit: exceeds cover
+ClaimError: exceeds cover
+case unknown package: PackageError: unknown package code: NO-SUCH-CODE
+case text instead of number: exception: stod: no conversion
+case impossible allocation request: bad_alloc: std::bad_alloc
+RAII rethrow path: destroy audit-file
+destroy patient-record
+top-level catch(...) recovered
+program continues after all cases

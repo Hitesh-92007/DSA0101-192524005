@@ -1,0 +1,4 @@
+case,billed,cover,expected
+valid,40000,50000,approved
+above_cover,60000,50000,ClaimError exceeds cover
+negative,-1,50000,invalid_argument negative amount
