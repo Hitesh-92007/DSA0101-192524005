@@ -1,0 +1,10 @@
+B3 benchmark: identical deterministic bill fields; setup excluded from timed loops
+n,virtual_ms,switch_ms,variant_ms,totals_equal,passes
+10,0.000017,0.000008,0.000006,yes,10000 total=89940.00
+1000,0.001583,0.000737,0.000662,yes,1000
+1000000,1.692960,1.989720,1.656260,yes,5
+10000000,17.544150,22.761900,18.875000,yes,2
+claims,invalid_percent,return_code_ms,exceptions_ms,code_errors,exception_errors
+1000000,0,0.828400,1.115600,0,0
+1000000,1,0.823400,29.932200,10000,10000
+1000000,50,0.734100,1392.754400,500000,500000

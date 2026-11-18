@@ -1,0 +1,4 @@
+claims,invalid_percent,invalid_claims,valid_claims,invalid_value
+1000000,0,0,1000000,-1
+1000000,1,10000,990000,-1
+1000000,50,500000,500000,-1
