@@ -28,3 +28,9 @@ Assignment 3 contains seven task folders with C++ source, answers, run transcrip
 [Open the task guide](./ASSIGNMENT%204%20%5BCO4%5D/README.md) · [Browse all task files](./ASSIGNMENT%204%20%5BCO4%5D/) · [Read the report PDF](./ASSIGNMENT%204%20%5BCO4%5D/Report/CO4_Assignment4_Report.pdf) · [Download the Word report](./ASSIGNMENT%204%20%5BCO4%5D/Report/CO4_Assignment4_Report.docx)
 
 The folder contains the six CO4 task solutions, C++ source, sample inputs, run records, output captures and the final reports.
+
+## Assignment 5 [CO5]
+
+[Open the assignment guide](./ASSIGNMENT%205%20%5BCO5%5D/README.md) · [Browse all files](./ASSIGNMENT%205%20%5BCO5%5D/) · [Read the complete report PDF](./ASSIGNMENT%205%20%5BCO5%5D/Report/CO5_Assignment_Report.pdf)
+
+Assignment 5 contains the CO5 runtime-polymorphism and exception-handling design, implementations, tested outputs, benchmark data, graphs, AddressSanitizer notes and full report. PNG evidence views are labelled as rendered source or captured-output views; raw console transcripts are saved beside them.
