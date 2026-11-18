@@ -1,0 +1,4 @@
+work\co5-cpp\Task_B1\nonvirtual_total_compile_error.cpp:4:12: error: 'total' is not virtual and cannot be declared pure
+    4 |     double total() const = 0; // expected diagnostic: only virtual functions can be pure
+      |            ^               ~
+1 error generated.

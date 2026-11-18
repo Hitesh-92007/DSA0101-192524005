@@ -1,0 +1,17 @@
+OP Ravi: 1700.00
+  SelfPay covered=0.00 patient_due=1700.00
+  Insurance covered=1360.00 patient_due=340.00
+  GovernmentScheme covered=1500.00 patient_due=200.00
+IP Meena: 47500.00
+  SelfPay covered=0.00 patient_due=47500.00
+  Insurance covered=38000.00 patient_due=9500.00
+  GovernmentScheme covered=40000.00 patient_due=7500.00
+DAYCARE Arun: 32000.00
+  SelfPay covered=0.00 patient_due=32000.00
+  Insurance covered=25600.00 patient_due=6400.00
+  GovernmentScheme covered=30000.00 patient_due=2000.00
+EMERGENCY Nila: 4900.00
+  SelfPay covered=0.00 patient_due=4900.00
+  Insurance covered=3920.00 patient_due=980.00
+  GovernmentScheme covered=3500.00 patient_due=1400.00
+Daily total=86100.00
